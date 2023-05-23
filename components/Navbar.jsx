@@ -57,7 +57,7 @@ const Navbar = () => {
           </div>
           <div className="border-b border-gray-300 my-4">
             <p className="w-[80%] md:w-[90%] py-4">
-              Let's build extraordinary something together!
+              {"Let's build extraordinary something together!"}
             </p>
           </div>
           <div className="py-4 flex flex-col">
@@ -79,7 +79,7 @@ const Navbar = () => {
               </Link>
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest">Let's connect</p>
+              <p className="uppercase tracking-widest">{"Let's connect"}</p>
             </div>
           </div>
         </div>
