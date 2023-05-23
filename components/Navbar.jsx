@@ -9,9 +9,9 @@ const Navbar = () => {
       <div className="flex justify-between items-center h-full px-4 2xl:px-16">
         <Image
           src="/../public/img/logo-website.png"
-          alt="/"
-          width="90"
-          height="50"
+          alt="logo"
+          width={90}
+          height={50}
         />
         <div>
           <ul className="hidden md:flex">
@@ -46,9 +46,9 @@ const Navbar = () => {
             <div className="flex w-full items-center justify-between">
               <Image
                 src="/../public/img/logo-website.png"
-                alt="/"
-                width="90"
-                height="50"
+                alt="logo"
+                width={90}
+                height={50}
               />
               <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer bg-[#D7BE69]/50">
                 <AiOutlineClose />
