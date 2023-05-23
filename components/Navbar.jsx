@@ -78,6 +78,9 @@ const Navbar = () => {
                 <li className="py-4 text-sm">Contact</li>
               </Link>
             </ul>
+            <div className="pt-40">
+              <p className="uppercase tracking-widest">Let's connect</p>
+            </div>
           </div>
         </div>
       </div>
