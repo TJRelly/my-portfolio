@@ -20,27 +20,27 @@ const Navbar = () => {
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:text-[#C49F00] ease-in duration-300">
+              <li className="ml-10 text-sm uppercase text-gray-700 hover:text-[#C49F00] ease-in duration-300">
                 Home
               </li>
             </Link>
-            <Link href="/about">
-              <li className="ml-10 text-sm uppercase hover:text-[#C49F00] ease-in duration-300">
+            <Link href="/">
+              <li className="ml-10 text-sm uppercase text-gray-700 hover:text-[#C49F00] ease-in duration-300">
                 About
               </li>
             </Link>
-            <Link href="/skills">
-              <li className="ml-10 text-sm uppercase hover:text-[#C49F00] ease-in duration-300">
+            <Link href="/">
+              <li className="ml-10 text-sm uppercase text-gray-700 hover:text-[#C49F00] ease-in duration-300">
                 Skills
               </li>
             </Link>
-            <Link href="/projects">
-              <li className="ml-10 text-sm uppercase hover:text-[#C49F00]">
+            <Link href="/">
+              <li className="ml-10 text-sm uppercase text-gray-700 hover:text-[#C49F00]">
                 Projects
               </li>
             </Link>
-            <Link href="/contact">
-              <li className="ml-10 text-sm uppercase hover:text-[#C49F00] ease-in duration-300">
+            <Link href="/">
+              <li className="ml-10 text-sm uppercase text-gray-700 hover:text-[#C49F00] ease-in duration-300">
                 Contact
               </li>
             </Link>
@@ -92,16 +92,16 @@ const Navbar = () => {
               <Link href="/">
                 <li className="py-4 text-sm hover:text-[#C49F00] ease-in duration-300">Home</li>
               </Link>
-              <Link href="/about">
+              <Link href="/">
                 <li className="py-4 text-sm hover:text-[#C49F00] ease-in duration-300">About</li>
               </Link>
-              <Link href="/skills">
+              <Link href="/">
                 <li className="py-4 text-sm hover:text-[#C49F00] ease-in duration-300">Skills</li>
               </Link>
-              <Link href="/projects">
+              <Link href="/">
                 <li className="py-4 text-sm hover:text-[#C49F00] ease-in duration-300">Projects</li>
               </Link>
-              <Link href="/contact">
+              <Link href="/">
                 <li className="py-4 text-sm hover:text-[#C49F00] ease-in duration-300">Contact</li>
               </Link>
             </ul>
