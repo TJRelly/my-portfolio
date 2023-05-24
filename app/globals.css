@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-[#ecf0f3] text-[1f2937] tracking-wide;
+    @apply bg-[#ecf0f3] text-gray-700 tracking-wide;
   }
 
   h1,
@@ -20,7 +20,7 @@
     @apply text-4xl sm:text-5xl md:text-6xl;
   }
 
-  h1 {
+  h2 {
     @apply text-3xl sm:text-4xl;
   }
 
