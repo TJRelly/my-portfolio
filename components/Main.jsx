@@ -45,7 +45,7 @@ const Main = () => {
             <BsFillPersonLinesFill />
           </div>
         </div>
-
+        
       </div>
     </div>
   );
