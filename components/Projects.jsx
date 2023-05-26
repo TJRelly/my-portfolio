@@ -19,33 +19,33 @@ const Projects = () => {
           {"What I've Built"}
         </h2>
       </div>
-      <div className="grid md:grid-cols-2 gap-8 relative">
+      <div className="grid md:grid-cols-2 gap-8 relative max-w-[1240px] mx-auto">
         <ProjectItem
-          title="Face Detection App"
+          title="Smart Brain - Face Detection"
           backgroundImg={smart5}
           projectUrl="/smart"
-          tech1="React.js"
-          tech2="Express.js"
-          tech3="PostgreSQL"
+          tech1="FullStack Application"
+          tech2="React | Express | PostgreSQL"
         />
         <ProjectItem
-          title="AI Code-Helper App"
+          title="Code Wizard"
           backgroundImg={AI2}
           projectUrl="/smart"
-          tech1="React.js"
+          tech1="FrontEnd Application"
+          tech2="React | ChatGPT AI API"
         />
         <ProjectItem
           title="News Landing Page"
           backgroundImg={news1}
           projectUrl="/smart"
-          tech1="Javascript"
+          tech1="FrontEnd Application"
+          tech2="HTML | CSS | Javascript"
         />
         <ProjectItem
           title="Barbershop Website"
           backgroundImg={barber1}
           projectUrl="/smart"
-          tech1="HTML"
-          tech2="CSS"
+          tech1="HTML | CSS | Javascript"
         />
       </div>
     </div>
