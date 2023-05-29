@@ -16,8 +16,6 @@ const Navbar = () => {
 
   const pathname = usePathname();
 
-  console.log(pathname);
-
   useEffect(() => {
     if (
       pathname === "/barber" ||

@@ -38,7 +38,9 @@ const Barber = () => {
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
-            <p className="text-center font-bold pb-2 border-b border-[#C49F00]/50 my-4">Technologies</p>
+            <p className="text-center font-bold pb-2 border-b border-[#C49F00]/50 my-4">
+              Technologies
+            </p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1"></RiRadioButtonFill>HTML
@@ -57,7 +59,7 @@ const Barber = () => {
           </div>
         </div>
         <Link href="/#projects">
-          <p className="underline cursor-pointer">Back</p>
+          <p className="underline cursor-pointer hover:text-[#C49F00] ease-in duration-300">Back</p>
         </Link>
       </div>
     </div>

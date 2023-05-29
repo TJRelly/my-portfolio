@@ -58,7 +58,7 @@ const Wizard = () => {
           </div>
         </div>
         <Link href="/#projects">
-          <p className="underline cursor-pointer hover:text-[#C49F00]">Back</p>
+          <p className="underline cursor-pointer hover:text-[#C49F00] ease-in duration-300">Back</p>
         </Link>
       </div>
     </div>

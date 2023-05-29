@@ -1,5 +1,6 @@
-import React from "react";
+"use client"; // This is a client component
 import Image from "next/image";
+import { React, useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -7,8 +8,19 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Link from "next/link";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [number, setNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    console.log("data", name, number, email, subject, message);
+  };
+
   return (
-    <div id="contact" className="w-full lg:h-screen relative bg-[#ecf0f3]">
+    <div id="contact" className="w-full py-14 px-8 relative bg-[#ecf0f3]">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="uppercase text-xl tracking-widest text-gray-500">
           Contact
@@ -60,32 +72,54 @@ const Contact = () => {
           {/* {right} */}
           <div className="col-span-3 w-full h-full shadow-xl shadow-gray-400 rounded-xl lg:p-4 text-gray-700">
             <div className="p-4">
-              <form>
+              <form onSubmit={onSubmit}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
-                    <input className="border-2 rounded-lg p-3" type="text" />
+                    <input
+                      onChange={(e) => setName(e.target.value)}
+                      className="border-2 rounded-lg p-3"
+                      type="text"
+                      value={name}
+                    />
                   </div>
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">
                       Phone Number
                     </label>
-                    <input className="border-2 rounded-lg p-3" type="text" />
+                    <input
+                      onChange={(e) => setNumber(e.target.value)}
+                      className="border-2 rounded-lg p-3"
+                      type="text"
+                      value={number}
+                    />
                   </div>
                 </div>
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Email</label>
-                  <input className="border-2 rounded-lg p-3" type="email" />
+                  <input
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="border-2 rounded-lg p-3"
+                    type="email"
+                    value={email}
+                  />
                 </div>
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Subject</label>
-                  <input className="border-2 rounded-lg p-3" type="text" />
+                  <input
+                    onChange={(e) => setSubject(e.target.value)}
+                    className="border-2 rounded-lg p-3"
+                    type="text"
+                    value={subject}
+                  />
                 </div>
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Message</label>
                   <textarea
+                    onChange={(e) => setMessage(e.target.value)}
                     className="border-2 rounded-lg p-3 border-gray-300"
                     rows={10}
+                    value={message}
                   ></textarea>
                 </div>
                 <button className="w-full p-4 mt-4">Send Message</button>
