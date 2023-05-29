@@ -8,6 +8,7 @@ import ProjectItem from "./ProjectItem";
 const Projects = () => {
   return (
     <div
+      id="projects"
       className="w-full relative py-16 px-8"
       style={{ background: "linear-gradient(#ECF0F3,#F4EED7,#ECF0F3)" }}
     >
@@ -30,21 +31,21 @@ const Projects = () => {
         <ProjectItem
           title="Code Wizard"
           backgroundImg={AI2}
-          projectUrl="/smart"
+          projectUrl="/wizard"
           tech1="FrontEnd Application"
           tech2="React | ChatGPT AI API"
         />
         <ProjectItem
           title="News Landing Page"
           backgroundImg={news1}
-          projectUrl="/smart"
+          projectUrl="/news"
           tech1="FrontEnd Application"
           tech2="HTML | CSS | Javascript"
         />
         <ProjectItem
           title="Barbershop Website"
           backgroundImg={barber1}
-          projectUrl="/smart"
+          projectUrl="/barber"
           tech1="HTML | CSS | Javascript"
         />
       </div>
