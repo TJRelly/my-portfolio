@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Skills = () => {
   return (
-    <div className="w-full py-16 px-10 relative bg-[#ecf0f3]">
+    <div id="skills" className="w-full py-16 px-10 relative bg-[#ecf0f3]">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="uppercase text-xl tracking-widest text-gray-500">
           Skills
@@ -12,7 +12,6 @@ const Skills = () => {
           What I Can Do
         </h2>
         <div className="grid md:gid-cols-2 lg:grid-cols-4 gap-8">
-
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
@@ -38,7 +37,12 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src="/skills/javascript.png" width={64} height={64} alt="/" />
+                <Image
+                  src="/skills/javascript.png"
+                  width={64}
+                  height={64}
+                  alt="/"
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Javascript</h3>
@@ -60,7 +64,12 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src="/skills/tailwind.png" width={64} height={64} alt="/" />
+                <Image
+                  src="/skills/tailwind.png"
+                  width={64}
+                  height={64}
+                  alt="/"
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Tailwind</h3>
@@ -71,7 +80,12 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src="/skills/nextjs.png" width={64} height={64} alt="/" />
+                <Image
+                  src="/skills/nextjs.png"
+                  width={64}
+                  height={64}
+                  alt="/"
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Next.js</h3>
@@ -93,14 +107,18 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src="/skills/github.png" width={64} height={64} alt="/" />
+                <Image
+                  src="/skills/github.png"
+                  width={64}
+                  height={64}
+                  alt="/"
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>GitHub</h3>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>

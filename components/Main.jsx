@@ -6,12 +6,10 @@ import ParticlesBg from "./ParticlesBg";
 
 const Main = () => {
   return (
-    <div className="w-full h-screen text-center">
-      
+    <div id="home" className="w-full h-screen text-center">
       <ParticlesBg />
 
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center relative">
-
         <p className="py-3 uppercase text-sm tracking-widest text-gray-700">
           {"Let's Build Something Extraordinary Together"}
         </p>
@@ -45,7 +43,6 @@ const Main = () => {
             <BsFillPersonLinesFill />
           </div>
         </div>
-        
       </div>
     </div>
   );

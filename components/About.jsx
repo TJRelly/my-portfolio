@@ -4,6 +4,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <div
+      id="about"
       className="w-full md:h-screen p-2 flex items-center px-10 py-16 relative"
       style={{ background: "linear-gradient(#ECF0F3,#F4EED7,#ECF0F3)" }}
     >
@@ -50,8 +51,8 @@ const About = () => {
           <Image
             src="/img/workspace.png"
             alt="workspace"
-            width={1000}
-            height={1000}
+            width={800}
+            height={100}
             className="rounded-xl"
           />
         </div>
