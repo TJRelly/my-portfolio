@@ -5,6 +5,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import { Tooltip } from "@nextui-org/react";
 import Link from "next/link";
 
 const Contact = () => {
@@ -14,9 +15,27 @@ const Contact = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
-    console.log("data", name, number, email, subject, message);
+
+    try {
+      const res = await fetch("/api/message", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          number,
+          email,
+          subject,
+          message,
+        }),
+      });
+      if (res.ok) console.log("message sent successfully");
+    } catch (err) {
+      console.error("Err", err);
+    }
   };
 
   return (
@@ -54,18 +73,40 @@ const Contact = () => {
                 <p className="uppercase pt-8">Connect With Me</p>
               </div>
               <div className="flex items-center py-4 w-[300px] justify-between">
-                <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
-                  <FaLinkedinIn />
-                </div>
-                <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
-                  <FaGithub />
-                </div>
-                <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
-                  <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
-                  <BsFillPersonLinesFill />
-                </div>
+                <a
+                  href="https://www.linkedin.com/in/terrelljackson-tj/"
+                  target="_blank"
+                >
+                  <Tooltip content={"Linkedin"} color={"invert"}>
+                    <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
+                      <FaLinkedinIn />
+                    </div>
+                  </Tooltip>
+                </a>
+                <a href="https://github.com/TJRelly" target="_blank">
+                  <Tooltip content={"Github"} color={"invert"}>
+                    <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
+                      <FaGithub />
+                    </div>
+                  </Tooltip>
+                </a>
+                <a href="mailto:terrell.jackson.jobs@gmail.com" target="_blank">
+                  <Tooltip content={"Email"} color={"invert"}>
+                    <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
+                      <AiOutlineMail />
+                    </div>
+                  </Tooltip>
+                </a>
+                <a
+                  href="/#contact"
+                  // target="_blank"
+                >
+                  <Tooltip content={"Contact Me"} color={"invert"}>
+                    <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
+                      <BsFillPersonLinesFill />
+                    </div>
+                  </Tooltip>
+                </a>
               </div>
             </div>
           </div>
@@ -75,15 +116,18 @@ const Contact = () => {
               <form onSubmit={onSubmit}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">Name</label>
+                    <label className="uppercase text-sm py-2" htmlFor="name">
+                      Name
+                    </label>
                     <input
                       onChange={(e) => setName(e.target.value)}
                       className="border-2 rounded-lg p-3"
                       type="text"
+                      id="name"
                       value={name}
                     />
                   </div>
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" htmlFor="number">
                     <label className="uppercase text-sm py-2">
                       Phone Number
                     </label>
@@ -91,34 +135,38 @@ const Contact = () => {
                       onChange={(e) => setNumber(e.target.value)}
                       className="border-2 rounded-lg p-3"
                       type="text"
+                      id="number"
                       value={number}
                     />
                   </div>
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col" htmlFor="email">
                   <label className="uppercase text-sm py-2">Email</label>
                   <input
                     onChange={(e) => setEmail(e.target.value)}
                     className="border-2 rounded-lg p-3"
                     type="email"
+                    id="email"
                     value={email}
                   />
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col" htmlFor="subject">
                   <label className="uppercase text-sm py-2">Subject</label>
                   <input
                     onChange={(e) => setSubject(e.target.value)}
                     className="border-2 rounded-lg p-3"
                     type="text"
+                    id="subject"
                     value={subject}
                   />
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col" htmlFor="message">
                   <label className="uppercase text-sm py-2">Message</label>
                   <textarea
                     onChange={(e) => setMessage(e.target.value)}
                     className="border-2 rounded-lg p-3 border-gray-300"
                     rows={10}
+                    id="message"
                     value={message}
                   ></textarea>
                 </div>

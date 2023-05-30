@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { Tooltip } from "@nextui-org/react";
 import ParticlesBg from "./ParticlesBg";
 
 const Main = () => {
@@ -30,18 +32,40 @@ const Main = () => {
         </p>
 
         <div className="flex items-center py-4 w-[300px] justify-between">
-          <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
-            <FaLinkedinIn />
-          </div>
-          <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
-            <FaGithub />
-          </div>
-          <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
-            <AiOutlineMail />
-          </div>
-          <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
-            <BsFillPersonLinesFill />
-          </div>
+          <a
+            href="https://www.linkedin.com/in/terrelljackson-tj/"
+            target="_blank"
+          >
+            <Tooltip content={"Linkedin"} color={"invert"}>
+              <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
+                <FaLinkedinIn />
+              </div>
+            </Tooltip>
+          </a>
+          <a href="https://github.com/TJRelly" target="_blank">
+            <Tooltip content={"Github"} color={"invert"}>
+              <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
+                <FaGithub />
+              </div>
+            </Tooltip>
+          </a>
+          <a href="mailto:terrell.jackson.jobs@gmail.com" target="_blank">
+            <Tooltip content={"Email"} color={"invert"}>
+              <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
+                <AiOutlineMail />
+              </div>
+            </Tooltip>
+          </a>
+          <a
+            href="/#contact"
+            // target="_blank"
+          >
+            <Tooltip content={"Contact Me"} color={"invert"}>
+              <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
+                <BsFillPersonLinesFill />
+              </div>
+            </Tooltip>
+          </a>
         </div>
       </div>
     </div>
