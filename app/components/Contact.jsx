@@ -107,10 +107,7 @@ const Contact = () => {
                     </div>
                   </Tooltip>
                 </a>
-                <a
-                  href="/#contact"
-                  // target="_blank"
-                >
+                <a href="/#contact">
                   <Tooltip content={"Contact Me"} color={"invert"}>
                     <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
                       <BsFillPersonLinesFill />
