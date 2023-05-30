@@ -1,8 +1,8 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import AI2 from "../../public/projects/AI2.png";
-import { RiRadioButtonFill } from "react-icons/ri";
+import React from "react"
+import Image from "next/image"
+import Link from "next/link"
+import AI2 from "../../public/projects/AI2.png"
+import { RiRadioButtonFill } from "react-icons/ri"
 
 const Wizard = () => {
   return (
@@ -58,11 +58,13 @@ const Wizard = () => {
           </div>
         </div>
         <Link href="/#projects">
-          <p className="underline cursor-pointer hover:text-[#C49F00] ease-in duration-300">Back</p>
+          <p className="underline cursor-pointer hover:text-[#C49F00] ease-in duration-300">
+            Back
+          </p>
         </Link>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Wizard;
+export default Wizard

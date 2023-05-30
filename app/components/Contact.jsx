@@ -1,22 +1,22 @@
-"use client"; // This is a client component
-import Image from "next/image";
-import { React, useState } from "react";
-import { AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import { Tooltip } from "@nextui-org/react";
-import Link from "next/link";
+"use client" // This is a client component
+import Image from "next/image"
+import { React, useState } from "react"
+import { AiOutlineMail } from "react-icons/ai"
+import { FaGithub, FaLinkedinIn } from "react-icons/fa"
+import { BsFillPersonLinesFill } from "react-icons/bs"
+import { HiOutlineChevronDoubleUp } from "react-icons/hi"
+import { Tooltip } from "@nextui-org/react"
+import Link from "next/link"
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [number, setNumber] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState("")
+  const [number, setNumber] = useState("")
+  const [email, setEmail] = useState("")
+  const [subject, setSubject] = useState("")
+  const [message, setMessage] = useState("")
 
   const onSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     try {
       const res = await fetch("/api/message", {
@@ -31,12 +31,12 @@ const Contact = () => {
           subject,
           message,
         }),
-      });
-      if (res.ok) console.log("message sent successfully");
+      })
+      if (res.ok) console.log("message sent successfully")
     } catch (err) {
-      console.error("Err", err);
+      console.error("Err", err)
     }
-  };
+  }
 
   return (
     <div id="contact" className="w-full py-14 px-8 relative bg-[#ecf0f3]">
@@ -184,7 +184,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

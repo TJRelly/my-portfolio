@@ -1,10 +1,10 @@
-"use client";
-import React from "react";
-import { AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { Tooltip } from "@nextui-org/react";
-import ParticlesBg from "./ParticlesBg";
+"use client"
+import React from "react"
+import { AiOutlineMail } from "react-icons/ai"
+import { FaGithub, FaLinkedinIn } from "react-icons/fa"
+import { BsFillPersonLinesFill } from "react-icons/bs"
+import { Tooltip } from "@nextui-org/react"
+import ParticlesBg from "./ParticlesBg"
 
 const Main = () => {
   return (
@@ -69,7 +69,7 @@ const Main = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main

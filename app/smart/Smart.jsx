@@ -1,8 +1,8 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import smart5 from "../../public/projects/smart5.png";
-import { RiRadioButtonFill } from "react-icons/ri";
+import React from "react"
+import Image from "next/image"
+import Link from "next/link"
+import smart5 from "../../public/projects/smart5.png"
+import { RiRadioButtonFill } from "react-icons/ri"
 
 const Smart = () => {
   return (
@@ -69,11 +69,13 @@ const Smart = () => {
           </div>
         </div>
         <Link href="/#projects">
-          <p className="underline cursor-pointer hover:text-[#C49F00] ease-in duration-300">Back</p>
+          <p className="underline cursor-pointer hover:text-[#C49F00] ease-in duration-300">
+            Back
+          </p>
         </Link>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Smart;
+export default Smart
