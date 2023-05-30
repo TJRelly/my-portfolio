@@ -1,8 +1,8 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import barber1 from "../../public/projects/barber1.png";
-import { RiRadioButtonFill } from "react-icons/ri";
+import React from "react"
+import Image from "next/image"
+import Link from "next/link"
+import barber1 from "../../public/projects/barber1.png"
+import { RiRadioButtonFill } from "react-icons/ri"
 
 const Barber = () => {
   return (
@@ -59,11 +59,13 @@ const Barber = () => {
           </div>
         </div>
         <Link href="/#projects">
-          <p className="underline cursor-pointer hover:text-[#C49F00] ease-in duration-300">Back</p>
+          <p className="underline cursor-pointer hover:text-[#C49F00] ease-in duration-300">
+            Back
+          </p>
         </Link>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Barber;
+export default Barber

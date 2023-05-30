@@ -1,9 +1,9 @@
-import React from "react";
-import smart5 from "/public/projects/smart5.png";
-import AI2 from "/public/projects/AI2.png";
-import news1 from "/public/projects/news1.png";
-import barber1 from "/public/projects/barber1.png";
-import ProjectItem from "./ProjectItem";
+import React from "react"
+import smart5 from "/public/projects/smart5.png"
+import AI2 from "/public/projects/AI2.png"
+import news1 from "/public/projects/news1.png"
+import barber1 from "/public/projects/barber1.png"
+import ProjectItem from "./ProjectItem"
 
 const Projects = () => {
   return (
@@ -51,7 +51,7 @@ const Projects = () => {
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

@@ -1,5 +1,5 @@
-import React from "react";
-import Image from "next/image";
+import React from "react"
+import Image from "next/image"
 
 const Skills = () => {
   return (
@@ -122,7 +122,7 @@ const Skills = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Skills;
+export default Skills
