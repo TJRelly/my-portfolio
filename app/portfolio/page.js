@@ -1,10 +1,10 @@
 // `app/page.js` is the UI for the `/` URL
-import Smart from "./Smart"
+import Portfolio from "./Portfolio"
 
 export default function Home() {
   return (
     <main>
-      <Smart />
+      <Portfolio />
     </main>
   )
 }

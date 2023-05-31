@@ -1,9 +1,10 @@
-import React from "react";
-import smart5 from "/public/projects/smart5.png";
-import AI2 from "/public/projects/AI2.png";
-import news1 from "/public/projects/news1.png";
-import barber1 from "/public/projects/barber1.png";
-import ProjectItem from "./ProjectItem";
+import React from "react"
+import smart5 from "/public/projects/smart5.png"
+import AI2 from "/public/projects/AI2.png"
+import news1 from "/public/projects/news1.png"
+import portfolio from "/public/projects/portfolio.png"
+// import barber1 from "/public/projects/barber1.png"
+import ProjectItem from "./ProjectItem"
 
 const Projects = () => {
   return (
@@ -26,7 +27,14 @@ const Projects = () => {
           backgroundImg={smart5}
           projectUrl="/smart"
           tech1="FullStack Application"
-          tech2="React | Express | PostgreSQL"
+          tech2="React | Node | PostgreSQL"
+        />
+        <ProjectItem
+          title="My Portfolio"
+          backgroundImg={portfolio}
+          projectUrl="/portfolio"
+          tech1="FullStack Application"
+          tech2="React | Next API | Javascript"
         />
         <ProjectItem
           title="Code Wizard"
@@ -42,16 +50,16 @@ const Projects = () => {
           tech1="FrontEnd Application"
           tech2="HTML | CSS | Javascript"
         />
-        <ProjectItem
+        {/* <ProjectItem
           title="Barbershop Website"
           backgroundImg={barber1}
           projectUrl="/barber"
           tech1="FrontEnd Application"
           tech2="HTML | CSS | Javascript"
-        />
+        /> */}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

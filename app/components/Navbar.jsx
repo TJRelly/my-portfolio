@@ -1,52 +1,47 @@
-"use client"; // This is a client component
-import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { usePathname } from "next/navigation";
+"use client" // This is a client component
+import React, { useState, useEffect } from "react"
+import Image from "next/image"
+import Link from "next/link"
+import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai"
+import { FaGithub, FaLinkedinIn } from "react-icons/fa"
+import { BsFillPersonLinesFill } from "react-icons/bs"
+import { usePathname } from "next/navigation"
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
-  const [shadow, setshadow] = useState(false);
-  const [navBg, setNavBg] = useState("#ecf0f3");
-  const [menuBg, setMenuBg] = useState("#D7BE69");
-  const [linkColor, setLinkColor] = useState("#1f2937");
+  const [nav, setNav] = useState(false)
+  const [shadow, setshadow] = useState(false)
+  const [navBg, setNavBg] = useState("#ecf0f3")
+  const [menuBg, setMenuBg] = useState("#D7BE69")
+  const [linkColor, setLinkColor] = useState("#1f2937")
 
-  const pathname = usePathname();
+  const pathname = usePathname()
 
   useEffect(() => {
-    if (
-      pathname === "/barber" ||
-      pathname === "/news" ||
-      pathname === "/smart" ||
-      pathname === "/wizard"
-    ) {
-      setNavBg("transparent");
-      setLinkColor("#ecf0f3");
-      setMenuBg("#D7BE69");
+    if (pathname !== "/") {
+      setNavBg("transparent")
+      setLinkColor("#ecf0f3")
+      setMenuBg("#D7BE69")
     } else {
-      setNavBg("#ecf0f3");
-      setLinkColor("#1f2937");
-      setMenuBg("rgba(215, 190, 105, 0.5)");
+      setNavBg("#ecf0f3")
+      setLinkColor("#1f2937")
+      setMenuBg("rgba(215, 190, 105, 0.5)")
     }
-  }, [pathname]);
+  }, [pathname])
 
   const handleNav = () => {
-    setNav(!nav);
-  };
+    setNav(!nav)
+  }
 
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
-        setshadow(true);
+        setshadow(true)
       } else {
-        setshadow(false);
+        setshadow(false)
       }
-    };
-    window.addEventListener("scroll", handleShadow);
-  }, []);
+    }
+    window.addEventListener("scroll", handleShadow)
+  }, [])
 
   return (
     <div
@@ -203,7 +198,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

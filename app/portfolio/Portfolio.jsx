@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import smart5 from "../../public/projects/smart5.png"
+import portfolio from "../../public/projects/portfolio.png"
 import { RiRadioButtonFill } from "react-icons/ri"
 
 const Smart = () => {
@@ -12,12 +12,12 @@ const Smart = () => {
         <Image
           className="absolute z-1 object-cover"
           fill
-          src={smart5}
+          src={portfolio}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-4">
-          <h2 className="py-2">FaceScanPro</h2>
-          <h3>React JS | Express JS | PostgrSQL</h3>
+          <h2 className="py-2">My Portfolio</h2>
+          <h3>Next JS | Next API | Nodemailer</h3>
         </div>
       </div>
 
@@ -27,19 +27,16 @@ const Smart = () => {
           <h2 className="text-transparent bg-gradient-to-r from-[#D7BE69] via-gray-600 to-[#D7BE69] bg-clip-text">
             Overview
           </h2>
-          <p className="pt-4">
-            An advanced facial detection software that accurately identifies and
-            locates faces within images.
-          </p>
+
           <p className="pt-4">
             {
-              "I have developed a robust web application leveraging React JS for the frontend and Express JS for the backend. This application is hosted on both Github and Render platforms, ensuring seamless accessibility and continuous integration. Users can effortlessly sign in and utilize the application's intuitive interface to input an image URL and leverage the powerful Clarifai face-detection API for accurate face detection within the uploaded image. This project showcases my expertise in building efficient and user-friendly applications by combining cutting-edge technologies and integrating third-party APIs to deliver a seamless and engaging user experience."
+              "This portfolio website is a meticulously crafted project using Next.js and styled with Tailwind CSS, leveraging server-side rendering to enhance search engine optimization and implementing lazy-loading images for optimal page load speed. The project also utilizes client routing for seamless navigation, incorporating the latest Next.js 13 features and taking advantage of the upgraded app client routing system. Furthermore, a custom Next.js API is implemented to handle form submissions, enabling users to send messages, and the integration of Node Mailer facilitates the seamless delivery of emails from the integrated form."
             }
           </p>
-          <a href="https://tjrelly.github.io/FaceScanPro/" target="_blank">
+          <a href="https://terrelljackson.vercel.app/" target="_blank">
             <button className="px-8 py-2 mt-6 mr-5">Live Site</button>
           </a>
-          <a href="https://github.com/TJRelly/FaceScanPro" target="_blank">
+          <a href="https://github.com/TJRelly/my-portfolio" target="_blank">
             <button className="px-8 py-2 mt-6">Github Repo</button>
           </a>
         </div>
@@ -56,18 +53,15 @@ const Smart = () => {
                 <RiRadioButtonFill className="pr-1"></RiRadioButtonFill>Tailwind
               </p>
               <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1"></RiRadioButtonFill>Next API
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1"></RiRadioButtonFill>
-                PostgreSQL
+                Nodemailer
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1"></RiRadioButtonFill>Express
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1"></RiRadioButtonFill>Clairfai
-                API
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1"></RiRadioButtonFill>Render
+                <RiRadioButtonFill className="pr-1"></RiRadioButtonFill>NPM
+                Particles
               </p>
             </div>
           </div>
