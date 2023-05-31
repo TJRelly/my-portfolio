@@ -1,22 +1,27 @@
-"use client"; // This is a client component
-import Image from "next/image";
-import { React, useState } from "react";
-import { AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import { Tooltip } from "@nextui-org/react";
-import Link from "next/link";
+"use client" // This is a client component
+import Image from "next/image"
+import Link from "next/link"
+import { React, useState } from "react"
+import { AiOutlineMail } from "react-icons/ai"
+import { FaGithub, FaLinkedinIn } from "react-icons/fa"
+import { BsFillPersonLinesFill } from "react-icons/bs"
+import { HiOutlineChevronDoubleUp } from "react-icons/hi"
+import { Tooltip } from "@nextui-org/react"
+import ConfettiExplosion from "react-confetti-explosion"
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [number, setNumber] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+  const [isSubmitted, setSubmitted] = useState(false)
+
+  const [isExploding, setIsExploding] = useState(false)
+
+  const [name, setName] = useState("")
+  const [number, setNumber] = useState("")
+  const [email, setEmail] = useState("")
+  const [subject, setSubject] = useState("")
+  const [message, setMessage] = useState("")
 
   const onSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     try {
       const res = await fetch("/api/message", {
@@ -31,12 +36,17 @@ const Contact = () => {
           subject,
           message,
         }),
-      });
-      if (res.ok) console.log("message sent successfully");
+      })
+
+      if (res.ok) {
+        console.log("message sent successfully")
+        setSubmitted(true)
+        setIsExploding(true)
+      }
     } catch (err) {
-      console.error("Err", err);
+      console.error("Err", err)
     }
-  };
+  }
 
   return (
     <div id="contact" className="w-full py-14 px-8 relative bg-[#ecf0f3]">
@@ -97,10 +107,7 @@ const Contact = () => {
                     </div>
                   </Tooltip>
                 </a>
-                <a
-                  href="/#contact"
-                  // target="_blank"
-                >
+                <a href="/#contact">
                   <Tooltip content={"Contact Me"} color={"invert"}>
                     <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
                       <BsFillPersonLinesFill />
@@ -113,65 +120,81 @@ const Contact = () => {
           {/* {right} */}
           <div className="col-span-3 w-full h-full shadow-xl shadow-gray-400 rounded-xl lg:p-4 text-gray-700">
             <div className="p-4">
-              <form onSubmit={onSubmit}>
-                <div className="grid md:grid-cols-2 gap-4 w-full py-2">
-                  <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2" htmlFor="name">
-                      Name
-                    </label>
+              {isSubmitted ? (
+                <div className="flex flex-col justify-center text-center py-8 gap-4">
+                  <h1 className="font-corgar py-4 text-transparent bg-gradient-to-r from-[#D7BE69] to-gray-500 bg-clip-text">
+                    Thank you!
+                  </h1>
+                  <p>Your message has been sent.</p>
+
+                  {isExploding && (
+                    <ConfettiExplosion particleCount={250} width={1500} />
+                  )}
+                </div>
+              ) : (
+                <form onSubmit={onSubmit}>
+                  <div className="grid md:grid-cols-2 gap-4 w-full py-2">
+                    <div className="flex flex-col">
+                      <label className="uppercase text-sm py-2" htmlFor="name">
+                        Name
+                      </label>
+                      <input
+                        onChange={(e) => setName(e.target.value)}
+                        className="border-2 rounded-lg p-3"
+                        type="text"
+                        id="name"
+                        value={name}
+                        required
+                      />
+                    </div>
+                    <div className="flex flex-col" htmlFor="number">
+                      <label className="uppercase text-sm py-2">
+                        Phone Number
+                      </label>
+                      <input
+                        onChange={(e) => setNumber(e.target.value)}
+                        className="border-2 rounded-lg p-3"
+                        type="text"
+                        id="number"
+                        value={number}
+                      />
+                    </div>
+                  </div>
+                  <div className="flex flex-col" htmlFor="email">
+                    <label className="uppercase text-sm py-2">Email</label>
                     <input
-                      onChange={(e) => setName(e.target.value)}
+                      onChange={(e) => setEmail(e.target.value)}
                       className="border-2 rounded-lg p-3"
-                      type="text"
-                      id="name"
-                      value={name}
+                      type="email"
+                      id="email"
+                      value={email}
+                      required
                     />
                   </div>
-                  <div className="flex flex-col" htmlFor="number">
-                    <label className="uppercase text-sm py-2">
-                      Phone Number
-                    </label>
+                  <div className="flex flex-col" htmlFor="subject">
+                    <label className="uppercase text-sm py-2">Subject</label>
                     <input
-                      onChange={(e) => setNumber(e.target.value)}
+                      onChange={(e) => setSubject(e.target.value)}
                       className="border-2 rounded-lg p-3"
                       type="text"
-                      id="number"
-                      value={number}
+                      id="subject"
+                      value={subject}
                     />
                   </div>
-                </div>
-                <div className="flex flex-col" htmlFor="email">
-                  <label className="uppercase text-sm py-2">Email</label>
-                  <input
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="border-2 rounded-lg p-3"
-                    type="email"
-                    id="email"
-                    value={email}
-                  />
-                </div>
-                <div className="flex flex-col" htmlFor="subject">
-                  <label className="uppercase text-sm py-2">Subject</label>
-                  <input
-                    onChange={(e) => setSubject(e.target.value)}
-                    className="border-2 rounded-lg p-3"
-                    type="text"
-                    id="subject"
-                    value={subject}
-                  />
-                </div>
-                <div className="flex flex-col" htmlFor="message">
-                  <label className="uppercase text-sm py-2">Message</label>
-                  <textarea
-                    onChange={(e) => setMessage(e.target.value)}
-                    className="border-2 rounded-lg p-3 border-gray-300"
-                    rows={10}
-                    id="message"
-                    value={message}
-                  ></textarea>
-                </div>
-                <button className="w-full p-4 mt-4">Send Message</button>
-              </form>
+                  <div className="flex flex-col" htmlFor="message">
+                    <label className="uppercase text-sm py-2">Message</label>
+                    <textarea
+                      onChange={(e) => setMessage(e.target.value)}
+                      className="border-2 rounded-lg p-3 border-gray-300"
+                      rows={10}
+                      id="message"
+                      value={message}
+                      required
+                    ></textarea>
+                  </div>
+                  <button className="w-full p-4 mt-4">Send Message</button>
+                </form>
+              )}
             </div>
           </div>
         </div>
@@ -184,7 +207,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact
