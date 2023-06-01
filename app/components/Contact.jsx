@@ -73,9 +73,14 @@ const Contact = () => {
               <div>
                 <h2 className="py-3 font-corgar">Terrell Jackson</h2>
                 <p>Software Developer</p>
-                <p className="py-4">
+                <p className="pt-4">
                   {
                     "I am available for contract or full-time positions. Contact me and let's talk."
+                  }
+                </p>
+                <p className="pt-2">
+                  {
+                    "Please complete the adjacent form to send me a direct message."
                   }
                 </p>
               </div>
@@ -192,7 +197,7 @@ const Contact = () => {
                       required
                     ></textarea>
                   </div>
-                  <button className="w-full p-4 mt-4">Send Message</button>
+                  <button className="w-full p-4 mt-4 hover:scale-95 ease-in duration-300">Send Message</button>
                 </form>
               )}
             </div>

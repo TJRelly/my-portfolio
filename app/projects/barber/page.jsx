@@ -1,18 +1,23 @@
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import AI2 from "../../public/projects/AI2.png"
+import barber1 from "../../../public/projects/barber1.png"
 import { RiRadioButtonFill } from "react-icons/ri"
 
-const Wizard = () => {
+const Barber = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10" />
-        <Image className="absolute z-1 object-cover" fill src={AI2} alt="/" />
+        <Image
+          className="absolute z-1 object-cover"
+          fill
+          src={barber1}
+          alt="/"
+        />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-4">
-          <h2 className="py-2">Smart Brain - Face Detection</h2>
-          <h3>React JS/ Express JS/ PostgrSQL/ Tailwind/ Render</h3>
+          <h2 className="py-2">Barbarshop Website</h2>
+          <h3>HTML | CSS | Javascript</h3>
         </div>
       </div>
 
@@ -38,21 +43,17 @@ const Wizard = () => {
             </p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1"></RiRadioButtonFill>React
+                <RiRadioButtonFill className="pr-1"></RiRadioButtonFill>HTML
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1"></RiRadioButtonFill>Tailwind
+                <RiRadioButtonFill className="pr-1"></RiRadioButtonFill>CSS
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1"></RiRadioButtonFill>
                 Javascript
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1"></RiRadioButtonFill>Express
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1"></RiRadioButtonFill>Clairfai
-                API
+                <RiRadioButtonFill className="pr-1"></RiRadioButtonFill>Github
               </p>
             </div>
           </div>
@@ -67,4 +68,4 @@ const Wizard = () => {
   )
 }
 
-export default Wizard
+export default Barber

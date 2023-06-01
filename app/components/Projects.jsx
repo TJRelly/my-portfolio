@@ -25,28 +25,28 @@ const Projects = () => {
         <ProjectItem
           title="FaceScanPro"
           backgroundImg={smart5}
-          projectUrl="/smart"
+          projectUrl="/projects/smart"
           tech1="FullStack Application"
           tech2="React | Node | PostgreSQL"
         />
         <ProjectItem
           title="My Portfolio"
           backgroundImg={portfolio}
-          projectUrl="/portfolio"
+          projectUrl="/projects/portfolio"
           tech1="FullStack Application"
           tech2="React | Next API | Javascript"
         />
         <ProjectItem
           title="Code Wizard"
           backgroundImg={AI2}
-          projectUrl="/wizard"
+          projectUrl="/projects/wizard"
           tech1="FrontEnd Application"
-          tech2="React | ChatGPT AI API"
+          tech2="Javascript | Node JS | ChatGPT API"
         />
         <ProjectItem
           title="News Landing Page"
           backgroundImg={news1}
-          projectUrl="/news"
+          projectUrl="/projects/news"
           tech1="FrontEnd Application"
           tech2="HTML | CSS | Javascript"
         />
