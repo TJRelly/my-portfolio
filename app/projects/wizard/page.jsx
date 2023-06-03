@@ -28,10 +28,14 @@ const Wizard = () => {
             }
           </p>
           <a href="https://coding-ai-eta.vercel.app/" target="_blank">
-            <button className="px-8 py-2 mt-6 mr-5 hover:scale-95 ease-in duration-300">Live Site</button>
+            <button className="px-8 py-2 mt-6 mr-5 hover:scale-95 ease-in duration-300">
+              Live Site
+            </button>
           </a>
           <a href="https://github.com/TJRelly/coding-ai" target="_blank">
-            <button className="px-8 py-2 mt-6 hover:scale-95 ease-in duration-300">Github Repo</button>
+            <button className="px-8 py-2 mt-6 hover:scale-95 ease-in duration-300">
+              Github Repo
+            </button>
           </a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
@@ -41,7 +45,8 @@ const Wizard = () => {
             </p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1"></RiRadioButtonFill>Vanilla Javascript
+                <RiRadioButtonFill className="pr-1"></RiRadioButtonFill>Vanilla
+                Javascript
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1"></RiRadioButtonFill>Vite

@@ -19,30 +19,18 @@ const About = () => {
           </h2>
           <p className="py-2">{"I'm not your average developer;"}</p>
           <p className="py-2 text-gray-600">
-            I possess a remarkable ability to quickly learn and excel in new
-            skills. Alongside my technical proficiency, I am an accomplished
-            pianist and currently serve as the acting pastor at my church,
-            showcasing my leadership abilities and dedication to serving others.
-            I have a deep passion for singing and a genuine love for the arts,
-            demonstrating my creative spirit and ability to find inspiration
-            from diverse sources.
+            I possess a remarkable ability to learn and excel at new skills
+            quickly. Alongside my technical proficiency, I have a deep passion
+            for the arts, showcasing my creative spirit and ability to find
+            inspiration from diverse sources.
           </p>
           <p className="py-2">
-            Moreover, I enjoy playing Raid Shadow Legends and immersing myself
-            in the world of gaming, highlighting my adaptability and
-            understanding of user experiences. In addition to my diverse
-            interests, I have also had the privilege of working as a Middle and
-            High School math tutor, actively contributing to the education and
-            development of young minds.
-          </p>
-          <p className="py-2 text-gray-600">
             My fascination with learning new technologies and my insatiable
-            curiosity drive me to constantly stay ahead of the curve, ensuring I
-            am always up-to-date and well-versed in the latest advancements. My
+            curiosity inspire me to stay up-to-date on the latest advancements,
+            ensuring I remain current and well-versed. Furthermore, my
             well-rounded background and diverse skill set make me a valuable
-            asset to any team, bringing a unique perspective, technical
-            proficiency, and a passion for continuous growth and success to your
-            organization.
+            asset to any team, bringing a fresh perspective, technical
+            proficiency, and a passion for continuous growth and success.
           </p>
           <Link href="/#projects">
             <p className="py-2 pb-4 underline cursor-pointer hover:text-[#C49F00] ease-in duration-300">
