@@ -27,6 +27,7 @@ const Wizard = () => {
               "Code Wizard is a cutting-edge JavaScript AI application powered by OpenAI's latest machine learning model. With its sleek and intuitive user interface inspired by the ChatGPT app's dark mode, Code Wizard provides a seamless and elegant experience. Leveraging the advanced GPT-3 model API, users can effortlessly seek assistance with JavaScript, React JS, or any other coding language. Notably, Code Wizard goes beyond conventional coding support, enabling users to seamlessly transfer code from one language to another. Whether you're a beginner or an experienced developer, Code Wizard empowers you with an intelligent and versatile AI companion for all your coding needs."
             }
           </p>
+
           <a href="https://coding-ai-eta.vercel.app/" target="_blank">
             <button className="px-8 py-2 mt-6 mr-5 hover:scale-95 ease-in duration-300">
               Live Site
@@ -37,6 +38,7 @@ const Wizard = () => {
               Github Repo
             </button>
           </a>
+          
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">

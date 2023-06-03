@@ -7,14 +7,14 @@ const About = () => {
     <div
       id="about"
       className="w-full md:h-screen p-2 flex items-center px-10 py-[100px] relative"
-      style={{ background: "linear-gradient(#ECF0F3,#F4EED7,#ECF0F3)" }}
+      style={{ background: "linear-gradient(#baad9a,#e6e3dd)" }}
     >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-gray-500">
             About
           </p>
-          <h2 className="py-4 text-transparent bg-gradient-to-r from-[#D7BE69] via-gray-600 to-[#D7BE69] bg-clip-text">
+          <h2 className="py-4 text-transparent bg-gradient-to-r from-[#b0a183] via-gray-600 to-[#b0a183] bg-clip-text">
             Who I Am
           </h2>
           <p className="py-2">{"I'm not your average developer;"}</p>
@@ -33,7 +33,7 @@ const About = () => {
             proficiency, and a passion for continuous growth and success.
           </p>
           <Link href="/#projects">
-            <p className="py-2 pb-4 underline cursor-pointer hover:text-[#C49F00] ease-in duration-300">
+            <p className="py-2 pb-4 underline cursor-pointer hover:text-[#987d4f] ease-in duration-300">
               Check out some of my latest projects.
             </p>
           </Link>

@@ -49,12 +49,12 @@ const Contact = () => {
   }
 
   return (
-    <div id="contact" className="w-full py-14 px-8 relative bg-[#ecf0f3]">
+    <div id="contact" className="w-full py-14 px-8 relative bg-[#e6e3dd]">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="uppercase text-xl tracking-widest text-gray-500">
           Contact
         </p>
-        <h2 className="py-4 text-transparent bg-gradient-to-r from-[#D7BE69] via-gray-600 to-[#D7BE69] bg-clip-text">
+        <h2 className="py-4 text-transparent bg-gradient-to-r from-[#b0a183] via-gray-600 to-[#b0a183] bg-clip-text">
           Get In Touch
         </h2>
         <div className="grid lg:grid-cols-5 gap-8">
@@ -93,28 +93,28 @@ const Contact = () => {
                   target="_blank"
                 >
                   <Tooltip content={"Linkedin"} color={"invert"}>
-                    <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
+                    <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#b0a183]/80">
                       <FaLinkedinIn />
                     </div>
                   </Tooltip>
                 </a>
                 <a href="https://github.com/TJRelly" target="_blank">
                   <Tooltip content={"Github"} color={"invert"}>
-                    <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
+                    <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#b0a183]/80">
                       <FaGithub />
                     </div>
                   </Tooltip>
                 </a>
                 <a href="mailto:terrell.jackson.jobs@gmail.com" target="_blank">
                   <Tooltip content={"Email"} color={"invert"}>
-                    <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
+                    <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#b0a183]/80">
                       <AiOutlineMail />
                     </div>
                   </Tooltip>
                 </a>
                 <a href="/#contact">
                   <Tooltip content={"Contact Me"} color={"invert"}>
-                    <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
+                    <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#b0a183]/80">
                       <BsFillPersonLinesFill />
                     </div>
                   </Tooltip>

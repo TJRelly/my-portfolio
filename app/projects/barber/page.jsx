@@ -33,8 +33,16 @@ const Barber = () => {
             to sign in and enter an image url and detect faces in a image using
             the Clairfai face-detection api.
           </p>
-          <button className="px-8 py-2 mt-6 mr-5">Demo</button>
-          <button className="px-8 py-2 mt-6">Code</button>
+          <a href="https://coding-ai-eta.vercel.app/" target="_blank">
+            <button className="px-8 py-2 mt-6 mr-5 hover:scale-95 ease-in duration-300">
+              Live Site
+            </button>
+          </a>
+          <a href="https://github.com/TJRelly/coding-ai" target="_blank">
+            <button className="px-8 py-2 mt-6 hover:scale-95 ease-in duration-300">
+              Github Repo
+            </button>
+          </a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">

@@ -36,11 +36,16 @@ const Smart = () => {
               "I have developed a robust web application leveraging React JS for the frontend and Express JS for the backend. This application is hosted on both Github and Render platforms, ensuring seamless accessibility and continuous integration. Users can effortlessly sign in and utilize the application's intuitive interface to input an image URL and leverage the powerful Clarifai face-detection API for accurate face detection within the uploaded image. This project showcases my expertise in building efficient and user-friendly applications by combining cutting-edge technologies and integrating third-party APIs to deliver a seamless and engaging user experience."
             }
           </p>
+
           <a href="https://tjrelly.github.io/FaceScanPro/" target="_blank">
-            <button className="px-8 py-2 mt-6 mr-5">Live Site</button>
+            <button className="px-8 py-2 mt-6 mr-5 hover:scale-95 ease-in duration-300">
+              Live Site
+            </button>
           </a>
-          <a href="https://github.com/TJRelly/FaceScanPro" target="_blank">
-            <button className="px-8 py-2 mt-6">Github Repo</button>
+          <a href="https://github.com/tjrelly/FaceScanPro" target="_blank">
+            <button className="px-8 py-2 mt-6 hover:scale-95 ease-in duration-300">
+              Github Repo
+            </button>
           </a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">

@@ -11,13 +11,13 @@ const Projects = () => {
     <div
       id="projects"
       className="w-full relative py-14 px-8"
-      style={{ background: "linear-gradient(#ECF0F3,#F4EED7,#ECF0F3)" }}
+      style={{ background: "linear-gradient(#e6e3dd,#baad9a,#e6e3dd)" }}
     >
       <div className="max-w-[1240px] mx-auto px-2 pt-16 pb-8">
         <p className="uppercase text-xl tracking-widest text-gray-500">
           Projects
         </p>
-        <h2 className="py-4 text-transparent bg-gradient-to-r from-[#D7BE69] via-gray-600 to-[#D7BE69] bg-clip-text">
+        <h2 className="py-4 text-transparent bg-gradient-to-r from-[#b0a183] via-gray-600 to-[#b0a183] bg-clip-text">
           {"What I've Built"}
         </h2>
       </div>

@@ -36,7 +36,7 @@ html {
   }
   button,
   .button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#D7BE69] to-gray-400 text-white;
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#b0a183]/80 to-gray-400 text-white;
   }
   .projectgradient {
     background: linear-gradient(to right, #ecf0f3, #616161);

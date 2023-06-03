@@ -8,8 +8,7 @@ import ParticlesBg from "./ParticlesBg"
 
 const Main = () => {
   return (
-    <div id="home" className="w-full h-screen text-center">
-      <ParticlesBg />
+    <div id="home" className="w-full h-screen text-center bg-[url('/img/gold-bg-2.jpg')] bg-cover bg-center">
 
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center relative">
         <p className="py-3 uppercase text-sm tracking-widest text-gray-700">
@@ -18,20 +17,18 @@ const Main = () => {
         <div className="font-corgar">
           <h1 className="py-4 text-gray-600 ">
             {"Hi, I'm "}
-            <span className="text-transparent bg-gradient-to-r from-gray-500 via-[#D7BE69] to-gray-400 bg-clip-text">
+            <span className="text-transparent bg-gradient-to-r from-gray-500 via-[#b0a183] to-gray-500 bg-clip-text">
               Terrell
             </span>
           </h1>
-          <h1 className="text-transparent bg-gradient-to-r from-gray-500 via-[#D7BE69] to-gray-400 bg-clip-text">
+          <h1 className="text-transparent bg-gradient-to-r from-gray-500 via-[#b0a183] to-gray-500 bg-clip-text">
             {"Software Developer"}
           </h1>
         </div>
 
         <p className="py-6 text-gray-700 max-w-[70%]">
-          Creative, detail-oriented, software engineer with a deep interest in
-          AI. Proven track record of creating and implementing successful front
-          and back end web applications. Looking to bring my skills to a tech
-          company with global reach.
+          Proven track record of creating and implementing successful front
+          and back end web applications.
         </p>
 
         <div className="flex items-center py-4 w-[300px] justify-between">
@@ -40,21 +37,21 @@ const Main = () => {
             target="_blank"
           >
             <Tooltip content={"Linkedin"} color={"invert"}>
-              <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
+              <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#e6e3dd]">
                 <FaLinkedinIn />
               </div>
             </Tooltip>
           </a>
           <a href="https://github.com/TJRelly" target="_blank">
             <Tooltip content={"Github"} color={"invert"}>
-              <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
+              <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#e6e3dd]">
                 <FaGithub />
               </div>
             </Tooltip>
           </a>
           <a href="mailto:terrell.jackson.jobs@gmail.com" target="_blank">
             <Tooltip content={"Email"} color={"invert"}>
-              <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
+              <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#e6e3dd]">
                 <AiOutlineMail />
               </div>
             </Tooltip>
@@ -64,7 +61,7 @@ const Main = () => {
             // target="_blank"
           >
             <Tooltip content={"Contact Me"} color={"invert"}>
-              <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#D7BE69]/50">
+              <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#e6e3dd]">
                 <BsFillPersonLinesFill />
               </div>
             </Tooltip>

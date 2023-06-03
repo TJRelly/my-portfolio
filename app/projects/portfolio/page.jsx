@@ -33,11 +33,15 @@ const Portfolio = () => {
               "This portfolio website is a meticulously crafted project using Next.js and styled with Tailwind CSS, leveraging server-side rendering to enhance search engine optimization and implementing lazy-loading images for optimal page load speed. The project also utilizes client-side routing for seamless navigation, incorporating the latest Next.js 13 features and taking advantage of the upgraded app client routing system. Furthermore, a custom Next.js API is implemented to handle form submissions, enabling users to send messages. Finally, the integration of Node Mailer facilitates the seamless delivery of emails from the integrated form."
             }
           </p>
-          <a href="https://terrelljackson.vercel.app/" target="_blank">
-            <button className="px-8 py-2 mt-6 mr-5">Live Site</button>
+          <a href="https://coding-ai-eta.vercel.app/" target="_blank">
+            <button className="px-8 py-2 mt-6 mr-5 hover:scale-95 ease-in duration-300">
+              Live Site
+            </button>
           </a>
-          <a href="https://github.com/TJRelly/my-portfolio" target="_blank">
-            <button className="px-8 py-2 mt-6">Github Repo</button>
+          <a href="https://github.com/TJRelly/coding-ai" target="_blank">
+            <button className="px-8 py-2 mt-6 hover:scale-95 ease-in duration-300">
+              Github Repo
+            </button>
           </a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
