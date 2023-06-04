@@ -197,7 +197,10 @@ const Contact = () => {
                       required
                     ></textarea>
                   </div>
-                  <button className="w-full p-4 mt-4 hover:scale-95 ease-in duration-300">Send Message</button>
+
+                  <button className="w-full p-4 mt-4 hover:scale-105 ease-in duration-300">
+                    Send Message
+                  </button>
                 </form>
               )}
             </div>
@@ -205,7 +208,7 @@ const Contact = () => {
         </div>
         <div className="flex justify-center py-12">
           <Link href="/">
-            <div className="rounded-full shadow-md shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300 bg-gradient-to-l from-[#D7BE69] to-gray-400">
+            <div className="rounded-full shadow-md shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300 bg-gradient-to-r from-[#b0a183]/80 to-gray-400 text-white">
               <HiOutlineChevronDoubleUp className="text-[#ecf0f3]" size={30} />
             </div>
           </Link>

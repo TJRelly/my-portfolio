@@ -25,7 +25,7 @@ const Projects = () => {
         <ProjectItem
           title="FaceScanPro"
           backgroundImg={smart5}
-          projectUrl="/projects/smart"
+          projectUrl="/projects/face"
           tech1="FullStack Application"
           tech2="React | Node | PostgreSQL"
         />

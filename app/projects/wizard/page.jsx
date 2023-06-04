@@ -16,8 +16,8 @@ const Wizard = () => {
         </div>
       </div>
 
-      <div className="max-w-[1240px] mx-auto p-4 grid md:grid-cols-5 gap-8 pt-8">
-        <div className="col-span-4">
+      <div className="max-w-[1240px] mx-auto p-4 grid md:grid-cols-4 gap-8 pt-8">
+        <div className="col-span-3">
           <p>Project</p>
           <h2 className="text-transparent bg-gradient-to-r from-[#D7BE69] via-gray-600 to-[#D7BE69] bg-clip-text">
             Overview
@@ -29,16 +29,16 @@ const Wizard = () => {
           </p>
 
           <a href="https://coding-ai-eta.vercel.app/" target="_blank">
-            <button className="px-8 py-2 mt-6 mr-5 hover:scale-95 ease-in duration-300">
+            <button className="px-8 py-2 mt-6 mr-5">
               Live Site
             </button>
           </a>
           <a href="https://github.com/TJRelly/coding-ai" target="_blank">
-            <button className="px-8 py-2 mt-6 hover:scale-95 ease-in duration-300">
+            <button className="px-8 py-2 mt-6">
               Github Repo
             </button>
           </a>
-          
+
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">

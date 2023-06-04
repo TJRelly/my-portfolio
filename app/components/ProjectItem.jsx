@@ -26,7 +26,7 @@ const ProjectItem = ({
           <p className="text-center text-bold">{tech2}</p>
           <p className="pb-4 text-center text-bold">{tech3}</p>
           <Link href={projectUrl}>
-            <p className="text-center py-2 rounded-lg button text-lg cursor-pointer font-roboto hover:scale-95 ease-in duration-300">
+            <p className="text-center py-2 rounded-lg button text-lg cursor-pointer font-roboto hover:scale-105 ease-in duration-300">
               More Info
             </p>
           </Link>
