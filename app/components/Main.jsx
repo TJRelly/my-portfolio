@@ -4,7 +4,6 @@ import { AiOutlineMail } from "react-icons/ai"
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 import { BsFillPersonLinesFill } from "react-icons/bs"
 import { Tooltip } from "@nextui-org/react"
-import ParticlesBg from "./ParticlesBg"
 
 const Main = () => {
   return (
