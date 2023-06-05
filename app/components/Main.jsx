@@ -20,8 +20,8 @@ const Main = () => {
               Terrell
             </span>
           </h1>
-          <h1 className="text-transparent bg-gradient-to-r from-gray-500 via-[#b0a183] to-gray-500 bg-clip-text">
-            {"Software Developer"}
+          <h1 className="text-transparent bg-gradient-to-r from-gray-500 via-[#b0a183] to-gray-500 bg-clip-text h-[100%]">
+            {"Software Engineer"}
           </h1>
         </div>
 
