@@ -6,19 +6,18 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full md:h-screen p-2 flex items-center px-10 py-[100px] relative"
-      style={{ background: "linear-gradient(#baad9a,#e6e3dd)" }}
+      className="w-full md:h-screen p-2 flex items-center px-10 py-[100px] relative bg-gradient-to-b from-[#e6e3dd] via-sky-600 to-[#e6e3dd]"
     >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
-        <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-gray-500">
+        <div className="col-span-2 text-white">
+          <p className="uppercase text-xl tracking-widest text-gray-600 md:text-white">
             About
           </p>
-          <h2 className="py-4 text-transparent bg-gradient-to-r from-[#b0a183] via-gray-600 to-[#b0a183] bg-clip-text">
+          <h2 className="py-4 text-transparent bg-sky-600 md:bg-gradient-to-r from-white via-sky-400 to-white bg-clip-text font-robotoS">
             Who I Am
           </h2>
           <p className="py-2">{"I'm not your average developer;"}</p>
-          <p className="py-2 text-gray-600">
+          <p className="py-2">
             I possess a remarkable ability to learn and excel at new skills
             quickly. Alongside my technical proficiency, I have a deep passion
             for the arts, showcasing my creative spirit and ability to find
@@ -33,7 +32,7 @@ const About = () => {
             proficiency, and a passion for continuous growth and success.
           </p>
           <Link href="/#projects">
-            <p className="py-2 pb-4 underline cursor-pointer hover:text-[#987d4f] ease-in duration-300">
+            <p className="py-6 pb-4 underline cursor-pointer hover:text-yellow-500 ease-in duration-300">
               Check out some of my latest projects.
             </p>
           </Link>

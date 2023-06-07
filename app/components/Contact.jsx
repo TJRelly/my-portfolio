@@ -50,11 +50,11 @@ const Contact = () => {
 
   return (
     <div id="contact" className="w-full py-14 px-8 relative bg-[#e6e3dd]">
-      <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <p className="uppercase text-xl tracking-widest text-gray-500">
+      <div className="max-w-[1240px] m-auto px-2 py-16 w-full text-sky-700">
+        <p className="uppercase text-xl tracking-widest ">
           Contact
         </p>
-        <h2 className="py-4 text-transparent bg-gradient-to-r from-[#b0a183] via-gray-600 to-[#b0a183] bg-clip-text">
+        <h2 className="pt-4 pb-8 text-transparent bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text font-robotoS">
           Get In Touch
         </h2>
         <div className="grid lg:grid-cols-5 gap-8">
@@ -64,15 +64,15 @@ const Contact = () => {
               <div>
                 <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
-                  src="/img/contact-us.jpg"
+                  src="/img/contact-us.png"
                   alt="contact us"
                   width={450}
                   height={300}
                 />
               </div>
               <div>
-                <h2 className="py-3 font-corgar">Terrell Jackson</h2>
-                <p>Software Developer</p>
+                <h2 className="pt-8 pb-3 text-transparent bg-gradient-to-r from-sky-600 to-sky-800 bg-clip-text font-robotoS">Terrell Jackson</h2>
+                <p>Software Engineer</p>
                 <p className="pt-4">
                   {
                     "I am available for contract or full-time positions. Contact me and let's talk."
@@ -93,28 +93,28 @@ const Contact = () => {
                   target="_blank"
                 >
                   <Tooltip content={"Linkedin"} color={"invert"}>
-                    <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#b0a183]/80">
+                    <div className="connect-btn">
                       <FaLinkedinIn />
                     </div>
                   </Tooltip>
                 </a>
                 <a href="https://github.com/TJRelly" target="_blank">
                   <Tooltip content={"Github"} color={"invert"}>
-                    <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#b0a183]/80">
+                    <div className="connect-btn">
                       <FaGithub />
                     </div>
                   </Tooltip>
                 </a>
                 <a href="mailto:terrell.jackson.jobs@gmail.com" target="_blank">
                   <Tooltip content={"Email"} color={"invert"}>
-                    <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#b0a183]/80">
+                    <div className="connect-btn">
                       <AiOutlineMail />
                     </div>
                   </Tooltip>
                 </a>
                 <a href="/#contact">
                   <Tooltip content={"Contact Me"} color={"invert"}>
-                    <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#b0a183]/80">
+                    <div className="connect-btn">
                       <BsFillPersonLinesFill />
                     </div>
                   </Tooltip>
@@ -137,7 +137,7 @@ const Contact = () => {
                   )}
                 </div>
               ) : (
-                <form onSubmit={onSubmit}>
+                <form onSubmit={onSubmit} className="text-sky-800">
                   <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                     <div className="flex flex-col">
                       <label className="uppercase text-sm py-2" htmlFor="name">
@@ -198,7 +198,7 @@ const Contact = () => {
                     ></textarea>
                   </div>
 
-                  <button className="w-full p-4 mt-4 hover:scale-105 ease-in duration-300">
+                  <button className="w-full p-4 mt-4 hover:scale-[1.025] ease-in duration-300">
                     Send Message
                   </button>
                 </form>
@@ -208,8 +208,8 @@ const Contact = () => {
         </div>
         <div className="flex justify-center py-12">
           <Link href="/">
-            <div className="rounded-full shadow-md shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300 bg-gradient-to-r from-[#b0a183]/80 to-gray-400 text-white">
-              <HiOutlineChevronDoubleUp className="text-[#ecf0f3]" size={30} />
+            <div className="rounded-full button p-4 hover:scale-110">
+              <HiOutlineChevronDoubleUp className="text-white" size={30} />
             </div>
           </Link>
         </div>

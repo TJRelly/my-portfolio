@@ -5,13 +5,13 @@ const Skills = () => {
   return (
     <div id="skills" className="w-full py-[100px] px-10 relative bg-[#e6e3dd]">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className=" uppercase text-xl tracking-widest text-gray-500">
+        <p className="uppercase text-xl tracking-widest text-sky-700">
           Skills
         </p>
-        <h2 className="py-4 text-transparent bg-gradient-to-r from-[#b0a183] via-gray-600 to-[#b0a183] bg-clip-text">
+        <h2 className="pt-4 pb-8 text-transparent bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text font-robotoS">
           What I Can Do
         </h2>
-        <div className="grid md:gid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:gid-cols-2 lg:grid-cols-4 gap-8 text-sky-700">
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
