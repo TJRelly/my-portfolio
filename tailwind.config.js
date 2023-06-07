@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
+        robotoS: ['Roboto Slab', 'serif'],
         corgar: ['Cormorant Garamond', 'serif'],
       }
     },
