@@ -126,11 +126,11 @@ const Contact = () => {
           <div className="col-span-3 w-full h-full shadow-xl shadow-gray-400 rounded-xl lg:p-4 text-gray-700">
             <div className="p-4">
               {isSubmitted ? (
-                <div className="flex flex-col justify-center text-center py-8 gap-4">
-                  <h1 className="font-corgar py-4 text-transparent bg-gradient-to-r from-[#D7BE69] to-gray-500 bg-clip-text">
+                <div className="flex flex-col justify-center text-center py-8 gap-4 text-sky-800">
+                  <h1 className="font-corgar py-4 text-transparent bg-gradient-to-r from-sky-400 to-sky-800 bg-clip-text">
                     Thank you!
                   </h1>
-                  <p>Your message has been sent.</p>
+                  <p >Your message has been sent.</p>
 
                   {isExploding && (
                     <ConfettiExplosion particleCount={250} width={1500} />
