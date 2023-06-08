@@ -42,10 +42,11 @@ const Navbar = () => {
     <div
       className={
         shadow
-          ? `fixed w-full h-20 shadow-xl z-[100] bg-${navBg} backdrop-blur-sm`
+          ? `fixed w-full h-20 shadow-xl z-[100] bg-${navBg}`
           : "fixed w-full h-20 z-[100]"
       }
     >
+    {console.log(`${navBg}`)}
       <div className="flex justify-between items-center h-full px-10 2xl:px-16">
         <Link href="/">
           <Image
