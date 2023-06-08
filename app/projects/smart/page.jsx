@@ -16,7 +16,7 @@ const Smart = () => {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-4">
-          <h2 className="py-2">FaceScanPro</h2>
+          <h2 className="py-2">Smart Brain</h2>
           <h3>React JS | Express JS | PostgrSQL</h3>
         </div>
       </div>
@@ -24,7 +24,7 @@ const Smart = () => {
       <div className="max-w-[1240px] mx-auto p-4 grid md:grid-cols-4 gap-8 pt-8">
         <div className="col-span-3">
           <p>Project</p>
-          <h2 className="text-transparent bg-gradient-to-r from-sky-400 via-gray-600 to-sky-800 bg-clip-text">
+          <h2 className="text-transparent bg-gradient-to-r from-[#D7BE69] via-gray-600 to-[#D7BE69] bg-clip-text">
             Overview
           </h2>
           <p className="pt-4">
@@ -37,20 +37,16 @@ const Smart = () => {
             }
           </p>
 
-          <a href="https://tjrelly.github.io/FaceScanPro/" target="_blank">
-            <button className="px-8 py-2 mt-6 mr-5">
-              Live Site
-            </button>
+          <a href="https://tjrelly.github.io/smart-brain/" target="_blank">
+            <button className="px-8 py-2 mt-6 mr-5">Live Site</button>
           </a>
-          <a href="https://github.com/tjrelly/FaceScanPro" target="_blank">
-            <button className="px-8 py-2 mt-6">
-              Github Repo
-            </button>
+          <a href="https://github.com/tjrelly/smart-brain" target="_blank">
+            <button className="px-8 py-2 mt-6">Github Repo</button>
           </a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
-            <p className="text-center font-bold pb-2 border-b border-sky-400 my-4">
+            <p className="text-center font-bold pb-2 border-b border-[#C49F00]/50 my-4">
               Technologies
             </p>
             <div className="grid grid-cols-3 md:grid-cols-1">

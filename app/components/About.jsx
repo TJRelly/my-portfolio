@@ -13,7 +13,7 @@ const About = () => {
           <p className="uppercase text-xl tracking-widest text-gray-600 md:text-white">
             About
           </p>
-          <h2 className="py-4 text-transparent bg-sky-600 md:bg-gradient-to-r from-white via-sky-400 to-white bg-clip-text font-robotoS">
+          <h2 className="py-4 text-sky-600 md:text-yellow-300 font-robotoS">
             Who I Am
           </h2>
           <p className="py-2">{"I'm not your average developer;"}</p>
@@ -32,12 +32,12 @@ const About = () => {
             proficiency, and a passion for continuous growth and success.
           </p>
           <Link href="/#projects">
-            <p className="py-6 pb-4 underline cursor-pointer hover:text-yellow-500 ease-in duration-300">
+            <p className="py-6 pb-4 underline cursor-pointer text-yellow-300 hover:text-white ease-in duration-300">
               Check out some of my latest projects.
             </p>
           </Link>
         </div>
-        <div className="py-2 w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+        <div className="py-2 w-full h-auto m-auto shadow-xl shadow-gray-500 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image
             src="/img/workspace.png"
             alt="workspace"

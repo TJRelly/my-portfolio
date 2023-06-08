@@ -61,7 +61,7 @@ const Contact = () => {
           {/* {left} */}
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 w-full h-full rounded-xl">
-              <div>
+              <div className="flex place-content-center">
                 <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
                   src="/img/contact-us.png"

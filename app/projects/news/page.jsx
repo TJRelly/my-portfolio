@@ -23,17 +23,22 @@ const News = () => {
             Overview
           </h2>
           <p className="pt-4">
-          For this project, I developed a responsive news website landing page based on a designed layout. The mobile version of the landing page incorporated a sliding navigation feature, which was achieved using a combination of CSS and JavaScript. This interactive navigation allowed users to seamlessly explore different sections of the website with smooth and intuitive sliding transitions. By focusing on delivering a visually appealing and user-friendly experience across devices, the resulting landing page successfully showcased the latest news while providing effortless navigation for mobile users.
+            For this project, I developed a responsive news website landing page
+            based on a designed layout. The mobile version of the landing page
+            incorporated a sliding navigation feature, which was achieved using
+            a combination of CSS and JavaScript. This interactive navigation
+            allowed users to seamlessly explore different sections of the
+            website with smooth and intuitive sliding transitions. By focusing
+            on delivering a visually appealing and user-friendly experience
+            across devices, the resulting landing page successfully showcased
+            the latest news while providing effortless navigation for mobile
+            users.
           </p>
-          <a href="https://tjrelly.github.io/news-homepage/" target="_blank">
-            <p className="button px-8 py-2 mt-6 mr-5">
-              Live Site
-            </p>
+          <a href="https://tjrelly.github.io/smart-brain/" target="_blank">
+            <button className="px-8 py-2 mt-6 mr-5">Live Site</button>
           </a>
-          <a href="https://github.com/TJRelly/news-homepage" target="_blank">
-            <p className="button px-8 py-2 mt-6">
-              Github Repo
-            </p>
+          <a href="https://github.com/tjrelly/smart-brain" target="_blank">
+            <button className="px-8 py-2 mt-6">Github Repo</button>
           </a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">

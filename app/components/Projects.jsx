@@ -3,7 +3,6 @@ import smart5 from "/public/projects/smart5.png"
 import AI2 from "/public/projects/AI2.png"
 import news1 from "/public/projects/news1.png"
 import portfolio from "/public/projects/portfolio.png"
-// import barber1 from "/public/projects/barber1.png"
 import ProjectItem from "./ProjectItem"
 
 const Projects = () => {
@@ -22,9 +21,9 @@ const Projects = () => {
       </div>
       <div className="grid md:grid-cols-2 gap-8 relative max-w-[1240px] mx-auto">
         <ProjectItem
-          title="FaceScanPro"
+          title="Smart Brain"
           backgroundImg={smart5}
-          projectUrl="/projects/face"
+          projectUrl="/projects/smart"
           tech1="FullStack Application"
           tech2="React | Node | PostgreSQL"
         />

@@ -6,25 +6,20 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai"
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 import { BsFillPersonLinesFill } from "react-icons/bs"
 import { usePathname } from "next/navigation"
+import { Tooltip } from "@nextui-org/react"
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
   const [shadow, setshadow] = useState(false)
   const [navBg, setNavBg] = useState("")
-  const [menuBg, setMenuBg] = useState("")
-  const [linkColor, setLinkColor] = useState("#1f2937")
 
   const pathname = usePathname()
 
   useEffect(() => {
-    if (pathname !== "/") {
-      setNavBg("")
-      setLinkColor("#ecf0f3")
-      setMenuBg("")
+    if (pathname === "/") {
+      setNavBg("sky-600/70")
     } else {
-      setNavBg("")
-      setLinkColor("#e6e3dd")
-      setMenuBg("")
+      setNavBg("yellow-200/70")
     }
   }, [pathname])
 
@@ -45,10 +40,9 @@ const Navbar = () => {
 
   return (
     <div
-      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100] bg-sky-500"
+          ? `fixed w-full h-20 shadow-xl z-[100] bg-${navBg} backdrop-blur-sm`
           : "fixed w-full h-20 z-[100]"
       }
     >
@@ -62,29 +56,29 @@ const Navbar = () => {
           />
         </Link>
         <div>
-          <ul style={{ color: `${linkColor}`}} className="hidden md:flex">
+          <ul className="hidden md:flex text-white">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase ease-in duration-200 hover:text-sky-700">
+              <li className="ml-10 text-sm uppercase hover:text-yellow-400 ease-in duration-200">
                 Home
               </li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase ease-in duration-200 hover:text-sky-700">
+              <li className="ml-10 text-sm uppercase hover:text-yellow-400 ease-in duration-200">
                 About
               </li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase ease-in duration-200 hover:text-sky-700">
+              <li className="ml-10 text-sm uppercase hover:text-yellow-400 ease-in duration-200">
                 Skills
               </li>
             </Link>
             <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase ease-in duration-200 hover:text-sky-700">
+              <li className="ml-10 text-sm uppercase hover:text-yellow-400 ease-in duration-200">
                 Projects
               </li>
             </Link>
             <Link href="/#contact">
-              <li className="ml-10 text-sm uppercase ease-in duration-200 hover:text-sky-700">
+              <li className="ml-10 text-sm uppercase hover:text-yellow-400 ease-in duration-200">
                 Contact
               </li>
             </Link>
@@ -92,7 +86,6 @@ const Navbar = () => {
           <div
             onClick={handleNav}
             className="md:hidden rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 text-white"
-            style={{ background: `${menuBg}` }}
           >
             <AiOutlineMenu size={20} />
           </div>
@@ -139,7 +132,7 @@ const Navbar = () => {
               <Link href="/">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4 text-sm hover:text-yellow-500 ease-in duration-200"
+                  className="py-4 text-sm hover:text-yellow-400 ease-in duration-300"
                 >
                   Home
                 </li>
@@ -147,7 +140,7 @@ const Navbar = () => {
               <Link href="/#about">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4 text-sm hover:text-yellow-500 ease-in duration-200"
+                  className="py-4 text-sm hover:text-yellow-400 ease-in duration-300"
                 >
                   About
                 </li>
@@ -155,7 +148,7 @@ const Navbar = () => {
               <Link href="/#skills">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4 text-sm hover:text-yellow-500 ease-in duration-200"
+                  className="py-4 text-sm hover:text-yellow-400 ease-in duration-300"
                 >
                   Skills
                 </li>
@@ -163,7 +156,7 @@ const Navbar = () => {
               <Link href="/#projects">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4 text-sm hover:text-yellow-500 ease-in duration-200"
+                  className="py-4 text-sm hover:text-yellow-400 ease-in duration-300"
                 >
                   Projects
                 </li>
@@ -171,7 +164,7 @@ const Navbar = () => {
               <Link href="/#contact">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4 text-sm hover:text-yellow-500 ease-in duration-200"
+                  className="py-4 text-sm hover:text-yellow-300 ease-in duration-300"
                 >
                   Contact
                 </li>
@@ -179,19 +172,41 @@ const Navbar = () => {
             </ul>
             <div className="pt-[8rem]">
               <p className="uppercase tracking-widest]">{"Let's connect"}</p>
-              <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-sky-400/40">
-                  <FaLinkedinIn />
-                </div>
-                <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-sky-400/40">
-                  <FaGithub />
-                </div>
-                <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-sky-400/40">
-                  <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-sky-400/40">
-                  <BsFillPersonLinesFill />
-                </div>
+              <div className="flex items-center justify-between my-4 w-full sm:w-[80%] text-gray-700">
+                <a
+                  href="https://www.linkedin.com/in/terrelljackson-tj/"
+                  target="_blank"
+                >
+                  <Tooltip content={"Linkedin"} color={"invert"}>
+                    <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-yellow-300/90">
+                      <FaLinkedinIn />
+                    </div>
+                  </Tooltip>
+                </a>
+                <a href="https://github.com/TJRelly" target="_blank">
+                  <Tooltip content={"Github"} color={"invert"}>
+                    <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-yellow-300/90">
+                      <FaGithub />
+                    </div>
+                  </Tooltip>
+                </a>
+                <a href="mailto:terrell.jackson.jobs@gmail.com" target="_blank">
+                  <Tooltip content={"Email"} color={"invert"}>
+                    <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-yellow-300/90">
+                      <AiOutlineMail />
+                    </div>
+                  </Tooltip>
+                </a>
+                <a
+                  href="/#contact"
+                  // target="_blank"
+                >
+                  <Tooltip content={"Contact Me"} color={"invert"}>
+                    <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-yellow-300/90">
+                      <BsFillPersonLinesFill />
+                    </div>
+                  </Tooltip>
+                </a>
               </div>
             </div>
           </div>
