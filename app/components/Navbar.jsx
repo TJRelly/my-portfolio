@@ -11,15 +11,15 @@ import { Tooltip } from "@nextui-org/react"
 const Navbar = () => {
   const [nav, setNav] = useState(false)
   const [shadow, setshadow] = useState(false)
-  const [navBg, setNavBg] = useState("")
+  const [navBg, setNavBg] = useState()
 
   const pathname = usePathname()
 
   useEffect(() => {
     if (pathname === "/") {
-      setNavBg("sky-600/70")
+      setNavBg("rgb(14, 165, 233, 0.75)")
     } else {
-      setNavBg("yellow-200/70")
+      setNavBg("rgb(128, 128, 128, 0.6)")
     }
   }, [pathname])
 
@@ -42,11 +42,14 @@ const Navbar = () => {
     <div
       className={
         shadow
-          ? `fixed w-full h-20 shadow-xl z-[100] bg-${navBg}`
+          ? "fixed w-full h-20 shadow-xl z-[100]"
           : "fixed w-full h-20 z-[100]"
       }
+      style={{
+        background: shadow ? navBg : "transparent",
+        backdropFilter: "blur(12px)"
+      }}
     >
-    {console.log(`${navBg}`)}
       <div className="flex justify-between items-center h-full px-10 2xl:px-16">
         <Link href="/">
           <Image
