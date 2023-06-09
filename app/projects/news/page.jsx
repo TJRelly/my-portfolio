@@ -34,10 +34,10 @@ const News = () => {
             the latest news while providing effortless navigation for mobile
             users.
           </p>
-          <a href="https://tjrelly.github.io/smart-brain/" target="_blank">
+          <a href="https://tjrelly.github.io/news-homepage/" target="_blank">
             <button className="px-8 py-2 mt-6 mr-5">Live Site</button>
           </a>
-          <a href="https://github.com/tjrelly/smart-brain" target="_blank">
+          <a href="https://github.com/tjrelly/news-homepage" target="_blank">
             <button className="px-8 py-2 mt-6">Github Repo</button>
           </a>
         </div>
