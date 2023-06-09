@@ -9,13 +9,11 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="w-full relative py-14 px-8 bg-gradient-to-b from-[#e6e3dd] via-sky-600 to-[#e6e3dd] "
+      className="w-full relative py-16 px-8 bg-gradient-to-b from-sky-500 to-sky-400 "
     >
-      <div className="max-w-[1240px] mx-auto px-2 pt-16 pb-8">
-        <p className="uuppercase text-xl tracking-widest text-sky-800">
-          Projects
-        </p>
-        <h2 className="py-4 text-transparent bg-sky-600 md:bg-white bg-clip-text font-robotoS">
+      <div className="max-w-[1240px] mx-auto px-2 pt-12 pb-8">
+        <p className="uppercase text-xl tracking-widest text-white">Projects</p>
+        <h2 className="py-4 text-yellow-300 font-robotoS">
           {"What I've Built"}
         </h2>
       </div>

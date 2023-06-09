@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Skills = () => {
   return (
-    <div id="skills" className="w-full py-[100px] px-10 relative bg-[#e6e3dd]">
+    <div id="skills" className="w-full py-[100px] px-10 relative bg-[#f5f5f5]">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="uppercase text-xl tracking-widest text-sky-700">
           Skills
@@ -108,14 +108,14 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/skills/github.png"
+                  src="/skills/postgreSQL.png"
                   width={64}
                   height={64}
                   alt="/"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>GitHub</h3>
+                <h3>PostgreSQL</h3>
               </div>
             </div>
           </div>

@@ -49,7 +49,7 @@ const Contact = () => {
   }
 
   return (
-    <div id="contact" className="w-full py-14 px-8 relative bg-[#e6e3dd]">
+    <div id="contact" className="w-full py-14 px-8 relative bg-[#f5f5f5]">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full text-sky-700">
         <p className="uppercase text-xl tracking-widest ">
           Contact

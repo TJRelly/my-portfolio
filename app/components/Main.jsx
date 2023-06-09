@@ -7,7 +7,7 @@ import { Tooltip } from "@nextui-org/react"
 
 const Main = () => {
   return (
-    <div id="home" className="w-full h-screen text-center bg-gradient-to-b from-sky-500 via-sky-400 to-[#e6e3dd] bg-cover bg-center">
+    <div id="home" className="w-full h-screen text-center bg-gradient-to-b from-sky-500 to-sky-400 bg-cover bg-center">
 
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center relative">
         <p className="py-3 uppercase text-sm tracking-widest text-white">
