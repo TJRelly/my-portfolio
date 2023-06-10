@@ -25,9 +25,9 @@ const Main = () => {
           </h1>
         </div>
 
-        <p className="py-6 text-white text-sm max-w-[70%] tracking-wider">
-          Proven track record of creating and implementing successful front
-          and back end web applications.
+        <p className="py-6 text-white text-sm uppercase max-w-[70%] tracking-wider">
+          Creating and implementing successful front
+          and back-end web applications.
         </p>
 
         <div className="flex items-center py-4 w-[300px] justify-between">
@@ -37,21 +37,21 @@ const Main = () => {
           >
             <Tooltip content={"Linkedin"} color={"invert"}>
               <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-yellow-300/90">
-                <FaLinkedinIn />
+                <FaLinkedinIn className="w-5 h-5"/>
               </div>
             </Tooltip>
           </a>
           <a href="https://github.com/TJRelly" target="_blank">
             <Tooltip content={"Github"} color={"invert"}>
               <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-yellow-300/90">
-                <FaGithub />
+                <FaGithub className="w-5 h-5"/>
               </div>
             </Tooltip>
           </a>
           <a href="mailto:terrell.jackson.jobs@gmail.com" target="_blank">
             <Tooltip content={"Email"} color={"invert"}>
               <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-yellow-300/90">
-                <AiOutlineMail />
+                <AiOutlineMail className="w-5 h-5"/>
               </div>
             </Tooltip>
           </a>
@@ -61,7 +61,7 @@ const Main = () => {
           >
             <Tooltip content={"Contact Me"} color={"invert"}>
               <div className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300 bg-yellow-300/90">
-                <BsFillPersonLinesFill />
+                <BsFillPersonLinesFill className="w-5 h-5"/>
               </div>
             </Tooltip>
           </a>

@@ -49,7 +49,9 @@ const Contact = () => {
   }
 
   return (
-    <div id="contact" className="w-full py-14 px-8 relative bg-[#f5f5f5]">
+    <div id="contact" className="w-full py-14 px-12 relative bg-[
+      
+    ]">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full text-sky-700">
         <p className="uppercase text-xl tracking-widest ">
           Contact
@@ -59,7 +61,7 @@ const Contact = () => {
         </h2>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* {left} */}
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-6">
             <div className="lg:p-4 w-full h-full rounded-xl">
               <div className="flex place-content-center">
                 <Image
@@ -124,7 +126,7 @@ const Contact = () => {
           </div>
           {/* {right} */}
           <div className="col-span-3 w-full h-full shadow-xl shadow-gray-400 rounded-xl lg:p-4 text-gray-700">
-            <div className="p-4">
+            <div className="p-6">
               {isSubmitted ? (
                 <div className="flex flex-col justify-center text-center py-8 gap-4 text-sky-800">
                   <h1 className="font-corgar py-4 text-transparent bg-gradient-to-r from-sky-400 to-sky-800 bg-clip-text">
@@ -199,6 +201,8 @@ const Contact = () => {
                   </div>
 
                   <button className="w-full p-4 mt-4 hover:scale-[1.025] ease-in duration-300">
+                    
+                    
                     Send Message
                   </button>
                 </form>
