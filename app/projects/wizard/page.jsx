@@ -22,7 +22,7 @@ const Wizard = () => {
           <h2 className="text-transparent bg-gradient-to-r from-[#D7BE69] via-gray-600 to-[#D7BE69] bg-clip-text">
             Overview
           </h2>
-          <p className="pt-4">
+          <p className="pt-4 max-w-[750px]">
             {
               "Code Wizard is a cutting-edge JavaScript AI application powered by OpenAI's latest machine learning model. With its sleek and intuitive user interface inspired by the ChatGPT app's dark mode, Code Wizard provides a seamless and elegant experience. Leveraging the advanced GPT-3 model API, users can effortlessly seek assistance with JavaScript, React JS, or any other coding language. Notably, Code Wizard goes beyond conventional coding support, enabling users to seamlessly transfer code from one language to another. Whether you're a beginner or an experienced developer, Code Wizard empowers you with an intelligent and versatile AI companion for all your coding needs."
             }

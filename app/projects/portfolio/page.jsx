@@ -28,7 +28,7 @@ const Portfolio = () => {
             Overview
           </h2>
 
-          <p className="pt-4">
+          <p className="pt-4 max-w-[750px]">
             {
               "This portfolio website is a meticulously crafted project using Next.js and styled with Tailwind CSS, leveraging server-side rendering to enhance search engine optimization and implementing lazy-loading images for optimal page load speed. The project also utilizes client-side routing for seamless navigation, incorporating the latest Next.js 13 features and taking advantage of the upgraded app client routing system. Furthermore, a custom Next.js API is implemented to handle form submissions, enabling users to send messages. Finally, the integration of Node Mailer facilitates the seamless delivery of emails from the integrated form."
             }

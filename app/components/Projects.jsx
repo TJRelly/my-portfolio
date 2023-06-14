@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="w-full relative py-16 px-8 bg-gradient-to-b from-sky-500 to-sky-400 "
+      className="w-full relative py-16 pb-32 px-8 bg-gradient-to-b from-sky-500 to-sky-400 "
     >
       <div className="max-w-[1240px] mx-auto px-2 pt-12 pb-8">
         <p className="uppercase text-xl tracking-widest text-white">Projects</p>

@@ -47,7 +47,7 @@ const Navbar = () => {
       }
       style={{
         background: shadow ? navBg : "transparent",
-        backdropFilter: "blur(12px)"
+        backdropFilter: shadow ? "blur(12px)" : ""
       }}
     >
       <div className="flex justify-between items-center h-full px-10 2xl:px-16">

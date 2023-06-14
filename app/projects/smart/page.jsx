@@ -27,11 +27,11 @@ const Smart = () => {
           <h2 className="text-transparent bg-gradient-to-r from-[#D7BE69] via-gray-600 to-[#D7BE69] bg-clip-text">
             Overview
           </h2>
-          <p className="pt-4">
+          <p className="pt-4 max-w-[750px]">
             An advanced facial detection software that accurately identifies and
             locates faces within images.
           </p>
-          <p className="pt-4">
+          <p className="pt-4 max-w-[750px]">
             {
               "I have developed a robust web application leveraging React JS for the frontend and Express JS for the backend. This application is hosted on both Github and Render platforms, ensuring seamless accessibility and continuous integration. Users can effortlessly sign in and utilize the application's intuitive interface to input an image URL and leverage the powerful Clarifai face-detection API for accurate face detection within the uploaded image. This project showcases my expertise in building efficient and user-friendly applications by combining cutting-edge technologies and integrating third-party APIs to deliver a seamless and engaging user experience."
             }

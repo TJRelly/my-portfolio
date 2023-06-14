@@ -49,7 +49,7 @@ const Contact = () => {
   }
 
   return (
-    <div id="contact" className="w-full py-14 px-12 relative bg-[
+    <div id="contact" className="w-full py-16 px-12 relative bg-[
       
     ]">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full text-sky-700">
@@ -193,7 +193,7 @@ const Contact = () => {
                     <textarea
                       onChange={(e) => setMessage(e.target.value)}
                       className="border-2 rounded-lg p-3 border-gray-300"
-                      rows={10}
+                      rows={8}
                       id="message"
                       value={message}
                       required

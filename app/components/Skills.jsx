@@ -3,11 +3,9 @@ import Image from "next/image"
 
 const Skills = () => {
   return (
-    <div id="skills" className="w-full py-[100px] px-10 relative bg-[#f5f5f5]">
+    <div id="skills" className="w-full py-36 px-10 relative bg-[#f5f5f5]">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="uppercase text-xl tracking-widest text-sky-700">
-          Skills
-        </p>
+        <p className="uppercase text-xl tracking-widest text-sky-700">Skills</p>
         <h2 className="pt-4 pb-8 text-transparent bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text font-robotoS">
           What I Can Do
         </h2>

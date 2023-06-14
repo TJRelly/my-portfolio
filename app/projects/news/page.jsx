@@ -22,7 +22,7 @@ const News = () => {
           <h2 className="text-transparent bg-gradient-to-r from-[#D7BE69] via-gray-600 to-[#D7BE69] bg-clip-text">
             Overview
           </h2>
-          <p className="pt-4">
+          <p className="pt-4 max-w-[750px]">
             For this project, I developed a responsive news website landing page
             based on a designed layout. The mobile version of the landing page
             incorporated a sliding navigation feature, which was achieved using
