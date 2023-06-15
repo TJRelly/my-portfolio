@@ -11,12 +11,10 @@ const Main = () => {
   return (
     <div
       id="home"
-      className="relative flex h-screen justify-center items-center text-center bg-gradient-to-b from-sky-500 to-sky-400"
+      className="relative h-full pt-32 flex-col justify-center items-center text-center bg-gradient-to-b from-sky-500 to-sky-400"
     >
-    
       <div className="max-w-[1240px] my-auto mx-auto p-2 flex flex-col justify-center items-center relative">
-
-        <p className="py-3 uppercase tracking-widest text-white">
+        <p className="py-3 uppercase tracking-widest text-white text-sm md:text-lg">
           {"Let's Build Something Extraordinary Together"}
         </p>
 
@@ -30,7 +28,7 @@ const Main = () => {
           </h1>
         </div>
 
-        <p className="text-white uppercase tracking-wider py-6">
+        <p className="text-white text-sm md:text-lg uppercase tracking-wider py-6">
           Creating and implementing successful front and back-end web
           applications.
         </p>
@@ -72,7 +70,7 @@ const Main = () => {
           </a>
         </div>
       </div>
-      <Image src={wave} alt="wave" className="w-full absolute bottom-0"/>
+      <Image src={wave} alt="wave" className="w-full" />
     </div>
   )
 }

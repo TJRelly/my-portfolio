@@ -16,11 +16,9 @@ const Navbar = () => {
   const pathname = usePathname()
 
   useEffect(() => {
-    if (pathname === "/") {
-      setNavBg("rgb(14, 165, 233, 0.75)")
-    } else {
-      setNavBg("rgb(128, 128, 128, 0.6)")
-    }
+    setNavBg(
+      pathname === "/" ? "rgb(14, 165, 233, 0.75)" : "rgb(128, 128, 128, 0.6)"
+    )
   }, [pathname])
 
   const handleNav = () => {
@@ -35,7 +33,12 @@ const Navbar = () => {
         setshadow(false)
       }
     }
+
     window.addEventListener("scroll", handleShadow)
+
+    return () => {
+      window.removeEventListener("scroll", handleShadow)
+    }
   }, [])
 
   return (
@@ -47,7 +50,7 @@ const Navbar = () => {
       }
       style={{
         background: shadow ? navBg : "transparent",
-        backdropFilter: shadow ? "blur(12px)" : ""
+        backdropFilter: shadow ? "blur(12px)" : "",
       }}
     >
       <div className="flex justify-between items-center h-full px-10 2xl:px-16">
@@ -105,7 +108,7 @@ const Navbar = () => {
           className={
             nav
               ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gradient-to-b from-sky-500 via-sky-400 to-[#e6e3dd] p-10 ease-in duration-500"
-              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+              : "fixed left-[-110%] top-0 p-10 ease-in duration-500"
           }
         >
           <div>

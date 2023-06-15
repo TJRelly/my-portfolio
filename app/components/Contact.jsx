@@ -49,13 +49,13 @@ const Contact = () => {
   }
 
   return (
-    <div id="contact" className="w-full py-16 px-12 relative bg-[
-      
-    ]">
+    <div
+      id="contact"
+      className="w-full p-2 flex items-center px-8 pt-32 pb-20
+       relative bg-[#f5f5f5]"
+    >
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full text-sky-700">
-        <p className="uppercase text-xl tracking-widest ">
-          Contact
-        </p>
+        <p className="uppercase text-xl tracking-widest ">Contact</p>
         <h2 className="pt-4 pb-8 text-transparent bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text font-robotoS">
           Get In Touch
         </h2>
@@ -73,7 +73,9 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className="pt-8 pb-3 text-transparent bg-gradient-to-r from-sky-600 to-sky-800 bg-clip-text font-robotoS">Terrell Jackson</h2>
+                <h2 className="pt-8 pb-3 text-transparent bg-gradient-to-r from-sky-600 to-sky-800 bg-clip-text font-robotoS">
+                  Terrell Jackson
+                </h2>
                 <p>Software Engineer</p>
                 <p className="pt-4">
                   {
@@ -132,7 +134,7 @@ const Contact = () => {
                   <h1 className="font-corgar py-4 text-transparent bg-gradient-to-r from-sky-400 to-sky-800 bg-clip-text">
                     Thank you!
                   </h1>
-                  <p >Your message has been sent.</p>
+                  <p>Your message has been sent.</p>
 
                   {isExploding && (
                     <ConfettiExplosion particleCount={250} width={1500} />
@@ -201,8 +203,6 @@ const Contact = () => {
                   </div>
 
                   <button className="w-full p-4 mt-4 hover:scale-[1.025] ease-in duration-300">
-                    
-                    
                     Send Message
                   </button>
                 </form>
