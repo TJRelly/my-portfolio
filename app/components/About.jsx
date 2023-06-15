@@ -16,9 +16,6 @@ const About = () => {
           </p>
           <h2 className="py-4 text-sky-600 font-robotoS">Who I Am</h2>
           <p className="py-2 text-sky-700">
-            {"I'm not your average developer;"}
-          </p>
-          <p className="py-2 text-sky-700">
             I possess a remarkable ability to learn and excel at new skills
             quickly. Alongside my{" "}
             <span className="text-purple-700">technical proficiency</span>, I
@@ -34,7 +31,7 @@ const About = () => {
             me a valuable asset to any team, bringing a fresh perspective,
             technical proficiency, and a{" "}
             <span className="text-purple-700">hunger</span> for{" "}
-            <span className="text-purple-700">continuos growth</span> and
+            <span className="text-purple-700">continuous growth</span> and
             success.
           </p>
           <Link href="/#projects">
