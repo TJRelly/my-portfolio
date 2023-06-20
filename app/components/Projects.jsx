@@ -1,7 +1,7 @@
 import React from "react"
 import smart5 from "/public/projects/smart5.png"
 import AI2 from "/public/projects/AI2.png"
-import news1 from "/public/projects/news1.png"
+import barber1 from "/public/projects/barber1.png"
 import portfolio from "/public/projects/portfolio.png"
 import ProjectItem from "./ProjectItem"
 
@@ -33,26 +33,19 @@ const Projects = () => {
           tech2="React | Next API | Javascript"
         />
         <ProjectItem
+          title="Barbershop Website"
+          backgroundImg={barber1}
+          projectUrl="/projects/barber"
+          tech1="FrontEnd Application"
+          tech2="HTML | CSS | Javascript"
+        />
+        <ProjectItem
           title="Code Wizard"
           backgroundImg={AI2}
           projectUrl="/projects/wizard"
           tech1="FrontEnd Application"
           tech2="Javascript | Node JS | ChatGPT API"
         />
-        <ProjectItem
-          title="News Landing Page"
-          backgroundImg={news1}
-          projectUrl="/projects/news"
-          tech1="FrontEnd Application"
-          tech2="HTML | CSS | Javascript"
-        />
-        {/* <ProjectItem
-          title="Barbershop Website"
-          backgroundImg={barber1}
-          projectUrl="/barber"
-          tech1="FrontEnd Application"
-          tech2="HTML | CSS | Javascript"
-        /> */}
       </div>
     </div>
   )

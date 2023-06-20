@@ -11,15 +11,15 @@ const Main = () => {
   return (
     <div
       id="home"
-      className="relative h-full pt-32 flex-col justify-center items-center text-center bg-gradient-to-b from-sky-500 to-sky-400"
+      className="relative h-full pt-[10rem] flex-col justify-center items-center text-center bg-gradient-to-b from-sky-500 to-sky-400"
     >
       <div className="max-w-[1240px] my-auto mx-auto p-2 flex flex-col justify-center items-center relative">
-        <p className="py-3 uppercase tracking-widest text-white text-sm md:text-lg">
+        <p className="py-3 px-8 uppercase tracking-widest text-white text-sm md:text-lg">
           {"Let's Build Something Extraordinary Together"}
         </p>
 
         <div className="font-robotoS">
-          <h1 className="py-4 text-white ">
+          <h1 className="pt-4 text-white ">
             {"Hi, I'm "}
             <span className="text-yellow-300">Terrell</span>
           </h1>
@@ -28,12 +28,12 @@ const Main = () => {
           </h1>
         </div>
 
-        <p className="text-white text-sm md:text-lg uppercase tracking-wider py-6">
+        <p className="text-white text-sm md:text-lg uppercase tracking-wider py-6 px-8">
           Creating and implementing successful front and back-end web
           applications.
         </p>
 
-        <div className="flex items-center py-4 w-[300px] justify-between">
+        <div className="flex items-center pt-4 w-[300px] justify-between">
           <a
             href="https://www.linkedin.com/in/terrelljackson-tj/"
             target="_blank"

@@ -14,7 +14,7 @@ const About = () => {
           <p className="uppercase text-xl tracking-widest text-sky-700">
             About
           </p>
-          <h2 className="py-4 text-sky-600 font-robotoS">Who I Am</h2>
+          <h2 className="py-4 text-sky-600 font-robotoS">Who Am I?</h2>
           <p className="py-2 text-sky-700">
             I possess a remarkable ability to learn and excel at new skills
             quickly. Alongside my{" "}
@@ -40,7 +40,7 @@ const About = () => {
             </p>
           </Link>
         </div>
-        <div className="py-2 w-full h-auto m-auto shadow-xl shadow-gray-500 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+        <div className="py-2 w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image
             src="/img/logo-website.png"
             alt="workspace"
