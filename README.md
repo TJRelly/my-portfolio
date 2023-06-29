@@ -28,5 +28,5 @@ You can find the project website here: [Live Site](https://terrelljackson.vercel
 
 <div align='center'>
     <p><b>App Screenshot:<b></p>
-    <img src='./public/portfolio.png'/>
+    <img src='./public/projects/portfolio.png'/>
 </div>
