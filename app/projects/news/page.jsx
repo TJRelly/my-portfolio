@@ -10,13 +10,13 @@ const News = () => {
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10" />
         <Image className="absolute z-1 object-cover" fill src={news1} alt="/" />
-        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-4">
+        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-6">
           <h2 className="py-2">News Landing Page</h2>
           <h3>HTML | CSS | Vanilla Javascript</h3>
         </div>
       </div>
 
-      <div className="max-w-[1240px] mx-auto p-4 grid md:grid-cols-4 gap-8 pt-8">
+      <div className="max-w-[1240px] mx-auto p-6 grid md:grid-cols-4 gap-8 pt-8">
         <div className="col-span-3">
           <p>Project</p>
           <h2 className="text-transparent bg-gradient-to-r from-[#D7BE69] via-gray-600 to-[#D7BE69] bg-clip-text">

@@ -15,13 +15,13 @@ const Portfolio = () => {
           src={portfolio}
           alt="/"
         />
-        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-4">
+        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-6">
           <h2 className="py-2">My Portfolio</h2>
           <h3>Next JS | Next API | Nodemailer</h3>
         </div>
       </div>
 
-      <div className="max-w-[1240px] mx-auto p-4 grid md:grid-cols-4 gap-8 pt-8">
+      <div className="max-w-[1240px] mx-auto p-6 grid md:grid-cols-4 gap-8 pt-8">
         <div className="col-span-3">
           <p>Project</p>
           <h2 className="text-transparent bg-gradient-to-r from-[#D7BE69] via-gray-600 to-[#D7BE69] bg-clip-text">

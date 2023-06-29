@@ -33,7 +33,7 @@ const Projects = () => {
           tech2="React | Next API | Javascript"
         />
         <ProjectItem
-          title="Barbershop Website"
+          title="Barbershops Inc."
           backgroundImg={barber1}
           projectUrl="/projects/barber"
           tech1="FrontEnd Application"

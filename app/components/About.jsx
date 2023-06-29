@@ -11,7 +11,7 @@ const About = () => {
     >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2 text-white max-w-[500px]">
-          <p className="uppercase text-xl tracking-widest text-sky-700">
+          <p className="uppercase text-xl tracking-widest text-purple-700">
             About
           </p>
           <h2 className="py-4 text-sky-600 font-robotoS">Who Am I?</h2>
