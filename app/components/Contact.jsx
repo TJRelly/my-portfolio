@@ -54,7 +54,7 @@ const Contact = () => {
       className="w-full py-16 px-8 relative m-auto bg-[#f5f5f5]"
     >
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full text-sky-700">
-        <p className="uppercase text-xl tracking-widest ">Contact</p>
+        <p className="uppercase text-xl text-purple-700 tracking-widest ">Contact</p>
         <h2 className="pt-4 pb-8 text-transparent bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text font-robotoS">
           Get In Touch
         </h2>
@@ -88,7 +88,7 @@ const Contact = () => {
                 </p>
               </div>
               <div>
-                <p className="uppercase pt-8">Connect With Me</p>
+                <p className="pt-8">Connect with me!</p>
               </div>
               <div className="flex items-center py-4 w-[300px] justify-between">
                 <a

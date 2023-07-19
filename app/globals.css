@@ -48,6 +48,6 @@
     background-size: 200% 100%;
   }
   .connect-btn {
-    @apply button rounded-full shadow-md shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-200;
+    @apply button rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-200;
   }
 }
