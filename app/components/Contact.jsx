@@ -211,7 +211,7 @@ const Contact = () => {
         </div>
         <div className="flex justify-center py-12">
           <Link href="/">
-            <div className="rounded-full button p-4 hover:scale-110">
+            <div className="rounded-full shadow-md shadow-gray-400 bg-sky-600 text-white duration-300 ease-in p-4 hover:scale-110">
               <HiOutlineChevronDoubleUp className="text-white" size={30} />
             </div>
           </Link>

@@ -42,12 +42,12 @@
   .button {
     @apply shadow-md shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-sky-400/80 to-sky-600 text-white hover:scale-105 duration-300 ease-in;
   }
+  .connect-btn {
+    @apply bg-sky-600 text-white rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-200;
+  }
   .projectgradient {
     background: linear-gradient(to right, #ecf0f3, #616161);
     background-attachment: fixed;
     background-size: 200% 100%;
-  }
-  .connect-btn {
-    @apply button rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-200;
   }
 }

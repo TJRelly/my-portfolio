@@ -19,12 +19,13 @@ const Main = () => {
         </p>
 
         <div className="font-robotoS">
-          <h1 className="pt-4 text-white ">
+          <h1 className="pt-4 text-white">
             {"Hi, I'm "}
             <span className="text-yellow-300">Terrell</span>
           </h1>
-          <h1 className="text-transparent bg-gradient-to-r from-white via-yellow-300 to-white bg-clip-text pb-4">
-            {"Software Engineer"}
+          <h1 className="text-white pb-4">
+            <span className="text-yellow-300">Software </span>
+            Engineer
           </h1>
         </div>
 
