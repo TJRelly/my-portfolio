@@ -11,7 +11,7 @@ const Barber = () => {
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10" />
         <Image className="absolute z-1 object-cover" fill src={barber1} alt="/" />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-6">
-          <h2 className="py-2">Barbarshops Inc.</h2>
+          <h2 className="py-2">Barbershops Inc.</h2>
           <h3>HTML | CSS | Vanilla Javascript</h3>
         </div>
       </div>
@@ -32,7 +32,7 @@ const Barber = () => {
             on delivering a visually appealing and user-friendly experience
             across devices, the resulting landing page takes advantage of landsape oriented css.
           </p>
-          <a href="https://tjrelly.github.io/barbarshops/" target="_blank">
+          <a href="https://tjrelly.github.io/barbershops/" target="_blank">
             <button className="px-8 py-2 mt-6 mr-5">Live Site</button>
           </a>
           <a href="https://github.com/tjrelly/barbarshops/" target="_blank">
