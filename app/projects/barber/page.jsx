@@ -32,7 +32,7 @@ const Barber = () => {
             on delivering a visually appealing and user-friendly experience
             across devices, the resulting landing page takes advantage of landsape oriented css.
           </p>
-          <a href="https://tjrelly.github.io/barbarshops/" target="_blank">
+          <a href="https://tjrelly.github.io/barbershops/" target="_blank">
             <button className="px-8 py-2 mt-6 mr-5">Live Site</button>
           </a>
           <a href="https://github.com/tjrelly/barbarshops/" target="_blank">
