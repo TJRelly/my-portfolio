@@ -14,8 +14,8 @@ const Main = () => {
       className="relative h-full pt-[10rem] flex-col justify-center items-center text-center bg-gradient-to-b from-sky-500 to-sky-400"
     >
       <div className="max-w-[1240px] my-auto mx-auto p-2 flex flex-col justify-center items-center relative">
-        <p className="py-3 px-8 uppercase tracking-widest text-white text-sm md:text-lg">
-          {"Let's Build Something Extraordinary Together"}
+        <p className="py-3 px-8 tracking-widest text-white text-sm md:text-lg">
+          {"Let's build something extraordinary together!"}
         </p>
 
         <div className="font-robotoS">
@@ -29,7 +29,7 @@ const Main = () => {
           </h1>
         </div>
 
-        <p className="text-white text-sm md:text-lg uppercase tracking-wider py-6 px-8">
+        <p className="text-white text-sm md:text-lg tracking-wider py-6 px-8">
           Creating and implementing successful front and back-end web
           applications.
         </p>
