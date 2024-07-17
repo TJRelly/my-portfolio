@@ -40,7 +40,7 @@ const Smart = () => {
           <a href="https://tjrelly.github.io/smart-brain/" target="_blank">
             <button className="px-8 py-2 mt-6 mr-5">Live Site</button>
           </a>
-          <a href="https://github.com/tjrelly/smart-brain" target="_blank">
+          <a href="https://smart-brain-chi.vercel.app/" target="_blank">
             <button className="px-8 py-2 mt-6">Github Repo</button>
           </a>
         </div>
