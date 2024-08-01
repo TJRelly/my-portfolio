@@ -44,7 +44,7 @@ const Projects = () => {
           backgroundImg={AI2}
           projectUrl="/projects/wizard"
           tech1="FrontEnd Application"
-          tech2="Javascript | Node JS | ChatGPT API"
+          tech2="Javascript | Node JS | API"
         />
       </div>
     </div>
