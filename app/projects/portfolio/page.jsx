@@ -7,7 +7,7 @@ import { RiRadioButtonFill } from "react-icons/ri"
 const Portfolio = () => {
   return (
     <div className="w-full">
-      <div className="w-screen h-[30vh] lg:h-[40vh] relative">
+      <div className="h-[30vh] lg:h-[40vh] relative">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10" />
         <Image
           className="absolute z-1 object-cover"
@@ -49,7 +49,7 @@ const Portfolio = () => {
             <p className="text-center font-bold pb-2 border-b border-[#C49F00]/50 my-4">
               Technologies
             </p>
-            <div className="grid grid-cols-3 md:grid-cols-1">
+            <div className="grid grid-cols-2 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1"></RiRadioButtonFill>React
               </p>
