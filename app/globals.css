@@ -45,7 +45,7 @@
         @apply bg-sky-600 text-white rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-200;
     }
     .projectgradient {
-        background: linear-gradient(to right, #ecf0f3, #616161);
+        background: linear-gradient(to right, #325061, #323242);
         background-attachment: fixed;
         background-size: 200% 100%;
     }
