@@ -11,9 +11,7 @@ import ConfettiExplosion from "react-confetti-explosion"
 
 const Contact = () => {
   const [isSubmitted, setSubmitted] = useState(false)
-
   const [isExploding, setIsExploding] = useState(false)
-
   const [name, setName] = useState("")
   const [number, setNumber] = useState("")
   const [email, setEmail] = useState("")
@@ -49,10 +47,7 @@ const Contact = () => {
   }
 
   return (
-    <div
-      id="contact"
-      className="w-full pt-16 pb-4 px-8 relative m-auto bg-[#f5f5f5]"
-    >
+    <div id="contact" className="w-full pt-16 pb-4 px-8 relative m-auto bg-[#f5f5f5]">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full text-sky-700">
         <p className="uppercase text-xl text-purple-700 tracking-widest ">Contact</p>
         <h2 className="pt-4 pb-8 text-transparent bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text font-robotoS">
@@ -77,24 +72,17 @@ const Contact = () => {
                 </h2>
                 <p>Software Engineer</p>
                 <p className="pt-4">
-                  {
-                    "I am available for contract or full-time positions. Contact me and let's talk."
-                  }
+                  {"I am available for contract or full-time positions. Contact me and let's talk."}
                 </p>
                 <p className="pt-2">
-                  {
-                    "Please complete the adjacent form to send me a direct message."
-                  }
+                  {"Please complete the adjacent form to send me a direct message."}
                 </p>
               </div>
               <div>
                 <p className="pt-8">Connect with me!</p>
               </div>
-              <div className="flex items-center py-4 w-[300px] justify-between">
-                <a
-                  href="https://www.linkedin.com/in/terrelljackson-tj/"
-                  target="_blank"
-                >
+              <div className="flex items-center py-4 justify-between">
+                <a href="https://www.linkedin.com/in/terrelljackson-tj/" target="_blank">
                   <Tooltip content={"Linkedin"} color={"invert"}>
                     <div className="connect-btn">
                       <FaLinkedinIn />
@@ -155,8 +143,8 @@ const Contact = () => {
                         required
                       />
                     </div>
-                    <div className="flex flex-col" htmlFor="number">
-                      <label className="uppercase text-sm py-2">
+                    <div className="flex flex-col">
+                      <label className="uppercase text-sm py-2" htmlFor="number">
                         Phone Number
                       </label>
                       <input
@@ -168,8 +156,10 @@ const Contact = () => {
                       />
                     </div>
                   </div>
-                  <div className="flex flex-col" htmlFor="email">
-                    <label className="uppercase text-sm py-2">Email</label>
+                  <div className="flex flex-col">
+                    <label className="uppercase text-sm py-2" htmlFor="email">
+                      Email
+                    </label>
                     <input
                       onChange={(e) => setEmail(e.target.value)}
                       className="border-2 rounded-lg p-3"
@@ -179,8 +169,10 @@ const Contact = () => {
                       required
                     />
                   </div>
-                  <div className="flex flex-col" htmlFor="subject">
-                    <label className="uppercase text-sm py-2">Subject</label>
+                  <div className="flex flex-col">
+                    <label className="uppercase text-sm py-2" htmlFor="subject">
+                      Subject
+                    </label>
                     <input
                       onChange={(e) => setSubject(e.target.value)}
                       className="border-2 rounded-lg p-3"
@@ -189,8 +181,10 @@ const Contact = () => {
                       value={subject}
                     />
                   </div>
-                  <div className="flex flex-col" htmlFor="message">
-                    <label className="uppercase text-sm py-2">Message</label>
+                  <div className="flex flex-col">
+                    <label className="uppercase text-sm py-2" htmlFor="message">
+                      Message
+                    </label>
                     <textarea
                       onChange={(e) => setMessage(e.target.value)}
                       className="border-2 rounded-lg p-3 border-gray-300"
@@ -222,3 +216,4 @@ const Contact = () => {
 }
 
 export default Contact
+
